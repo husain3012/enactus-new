@@ -8,4 +8,4 @@ DEBUG = True
 
 # ALLOWED_HOSTS = ['localhost']
 ALLOWED_HOSTS = ['localhost','http://enactusjmi.org/','enactus.org','35.244.7.161','127.0.0.1','enactus-300513.el.r.appspot.com','http://346f87819e6f.ngrok.io',
-    'https://346f87819e6f.ngrok.io','346f87819e6f.ngrok.io','192.168.0.107']
+    'https://346f87819e6f.ngrok.io','346f87819e6f.ngrok.io','192.168.0.107','enactusofficialwebsite-env.eba-xp4xt2nd.ap-south-1.elasticbeanstalk.com']
