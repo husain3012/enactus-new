@@ -1,0 +1,138 @@
+{% extends "main.html" %}
+{% load static %}
+{% block title %}
+  ENACTUS JMI|Blog
+{% endblock title %}
+{% block content %} 
+
+    <section class="home-slider owl-carousel">
+      <div class="slider-item bread-item" style="background-image: url({% static "media/website/images/water1.jpg" %});" data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
+        <div class="container-fluid">
+          <div class="row slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+
+            <div class="col-md-8 mt-5 text-center col-sm-12 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+              <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-2"><a href={% url 'site:index' %}>Home</a></span> <span class="mr-2"><a href={% url 'site:blog_list' %}>Blog</a></span> <span>SANITATION</span></p>
+	            <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">The necessity and importance of clean water and sanitation</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row" >
+          <div class="col-md-8 ftco-animate">
+            <!-- <h2 class="mb-3">#1. We Love WordPress Themes</h2> -->
+            <p>The goal of proper sanitation is to better the public health conditions and it is directly related to the
+availability of clean water. In recent years, progress has been made to increase the accessibility of
+proper drinking water and sanitation and yet billions of people still lack these necessary services. While
+the UN has determined that access to clean water and sanitation facilities is a basic human right, we
+live in a world where the most fundamental rights are denied. By 2050, it is projected that at least one
+one-fourth of humanity will suffer recurring water shortages while currently, more than two-billion people
+in the world lack access to clean, healthy, risk-free water.</p>
+            <p>Around the world, eighty percent of wastewater goes into waterways without adequate treatment and
+adds toxic elements in water bodies. Such contaminated water is estimated to result in more than half
+a million deaths per year. According to the World Health Organization, many diseases are linked with
+the use of poor water quality such as polio, typhoid, dysentery, hepatitis A, diarrhoea, and cholera. The
+fact that these problems occur mainly in Third World countries is more alarming as they don't have apt
+healthcare facilities to deal with the outcome.</p>
+            <p>Standard sanitation has always been an increasing problem. With the onset of Covid-19 pandemic,
+waste disposal has accelerated due to usage of masks and gloves. The pandemic has also made
+sanitation more important than ever. According to the World Health Organization, handwashing is one
+of the most effective actions you can do to reduce the spread of pathogens and prevent infections and it
+also acts as a prevention method for Coronavirus. Yet two out of five people do not have access to a
+hand-washing station and billions of people still lack safe water sanitation.</p>
+            
+            <p>Sanitation is a global development priority and is included in the Sustainable Development Goals
+established by the United Nations General Assembly. Two-thirds of countries lack baseline estimates for
+SDG indicators on hand washing, safely managed drinking water, and sanitation services (as of 2017).
+The current reality entails that we observe proper sanitation and provide a clean environment to those
+around us and help stop the transmission of diseases.</p>
+            <p>We at Enactus JMI are sympathetic to the problems of the world and our communities. We have come
+up with projects to help deal with the continuously rising problems of clean water and sanitation. Project
+Shrimati, for example, presents itself to tackle the issue of the accumulation of plastic waste and
+sanitary waste disposal along with other objectives - by creating biodegradable face masks and
+eco-friendly reusable sanitary napkins. Another water-based project is in development aiming to
+counter the problems of water stress (that affects more than 2 billion people) and maximize the
+accessibility of clean water.</p>
+            <p>Water, worldwide, is not just being used more but also being polluted increasingly. To resolve the
+problems of clean water and sanitation, the governments and authorities must provide sanitation
+facilities, and encourage hygiene. Protecting and restoring water-related ecosystems is also very
+essential. More importantly, it is almost compulsory for us as good, grateful humans to spread
+awareness and to stop wasting water- to close the taps and repair the leaking ones, to dispose of
+garbage properly, and to observe personal hygiene and carry out sanitation practices as ordinary as
+handwashing.</p>
+            <div class="tag-widget post-tag-container mb-5 mt-5">
+              <div class="tagcloud">
+                <a href="#" class="tag-cloud-link">Sanitation</a>
+                <a href="#" class="tag-cloud-link">Water</a>
+                <a href="#" class="tag-cloud-link">Hygiene</a>
+                <a href="#" class="tag-cloud-link">Cleanliness</a>
+              </div>
+            </div>
+            
+            <div class="about-author d-flex p-5 bg-light">
+              <div class="bio align-self-md-center mr-5">
+                <!-- <img src="images/person_1.jpg" alt="Image placeholder" class="img-fluid mb-4"> -->
+              </div>
+              <div class="desc align-self-md-center">
+                <h3>Farzan Ghani</h3>
+                <p></p>
+              </div>
+            </div>
+
+
+            
+
+          </div> <!-- .col-md-8 -->
+          <div class="col-md-4 sidebar ftco-animate">
+           
+            
+            <div class="sidebar-box ftco-animate">
+              <h3>Recent Blog</h3>
+              <!-- <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="icon-calendar"></span> July 12, 2018</a></div>
+                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+                  </div>
+                </div>
+              </div> -->
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url({% static "media/website/images/myth1.jpg" %});"></a>
+                <div class="text">
+                  <h3 class="heading"><a href={% url 'site:myth' %}>7 Myths About Menstruation That We Need To Bust Straight Away</a></h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="icon-calendar"></span> Oct 15, 2021</a></div>
+                    <div><a href="#"><span class="icon-person"></span> Anam Khan</a></div>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url({% static "media/website/images/climate1.jpg" %});"></a>
+                <div class="text">
+                  <h3 class="heading"><a href={% url 'site:climate' %}>Ten Women Shaping Climate Action In 2021</a></h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="icon-calendar"></span> Oct 15, 2021</a></div>
+                    <div><a href="#"><span class="icon-person"></span> Sultana Parween</a></div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+                        
+          </div>
+
+        </div>
+      </div>
+    </section> <!-- .section -->
+
+
+    {% endblock content %}

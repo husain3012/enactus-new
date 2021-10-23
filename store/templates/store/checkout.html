@@ -1,0 +1,185 @@
+{% extends "store/main.html" %} {% load static %} {% block content %}
+<hr />
+<section class="checkout-section spad">
+  <div class="container">
+    <form id="form" class="checkout-form" method="POST" action="{% url 'store:checkout' %}">
+      {% csrf_token %}
+      <div class="row">
+        <div class="col-lg-6">
+          <h4>Biling Details</h4>
+
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input required type="name" class="form-control" id="name" placeholder="Name" name="name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input required type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" name="email" />
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <input required type="text" class="form-control" id="address" placeholder="Address" name="adress" />
+          </div>
+          <div class="form-group">
+            <!-- <label for="city">City</label> -->
+            <input required type="text" class="form-control" id="city" placeholder="City" name="city" />
+          </div>
+          <div class="form-group">
+            <!-- <label for="state">State</label> -->
+            <input required type="text" class="form-control" id="state" placeholder="State" name="state" />
+          </div>
+          <div class="form-group">
+            <!-- <label for="zipcode">Zipcode</label> -->
+            <input required type="text" class="form-control" id="zipcode" placeholder="Zipcode" name="zipcode" />
+          </div>
+         
+
+          <!-- <script>
+      (function(){
+        var d=document; var x=!d.getElementById('razorpay-embed-btn-js')
+        if(x){ var s=d.createElement('script'); s.defer=!0;s.id='razorpay-embed-btn-js';
+        s.src='https://cdn.razorpay.com/static/embed_btn/bundle.js';d.body.appendChild(s);} else{var rzp=window['__rzp__'];
+        rzp && rzp.init && rzp.init()}})();
+    </script>
+  </div> -->
+          <!-- <hr /> -->
+
+       
+      </div>
+      <div class="col-lg-6">
+        <div class="place-order">
+          <h4>Your Order</h4>
+          <br />
+          <div class="order-total">
+            <ul class="order-table">
+              <li>Product <span>Total</span></li>
+              {% for item in items %}
+              <li class="fw-normal">{{ item.product.name }} x {{ item.quantity }} <span>Rs. {{ item.get_total }}</span></li>
+              {% endfor %}
+              <li class="total-price">Total <span>Rs. {{ order.get_cart_total }}</span></li> 
+            </ul>
+            <!-- <div class="payment-check">
+              <div class="pc-item">
+                <label for="pc-check">
+                  Cash on Delivery
+                  <input type="checkbox" id="pc-check" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+
+              <div class="pc-item">
+                <label for="pc-paypal">
+                  Paypal
+                  <input type="checkbox" id="pc-paypal" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div> -->
+            <br />
+            <div class="order-btn">
+              <!-- <button type="submit" class="site-btn place-btn">Place Order</button> -->
+              <input type="hidden" id="a" name="a" value="{{ payment.id }}" />
+
+              <button type="submit" class="site-btn place-btn d-block m-auto">Place Order</button>
+              <button id="rzp-button2" type="submit" class="site-btn place-btn hidden mt-2">Pay with Razorpay</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+{% if payment %}
+
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+  var options = {
+    key: "rzp_test_CYs9cRwr6xU21F", // Enter the Key ID generated from the Dashboard
+    amount: "{{payment.amount}}", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+    currency: "INR",
+    name: "ENACTUS JMI",
+    description: "Transaction",
+    image: `{% static "images/en_b.png" %}`,
+    order_id: "{{payment.id}}", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+    callback_url: "/store/success/",
+    prefill: {
+      name: "{{user.name}}",
+      email: "",
+      contact: "",
+    },
+    notes: {
+      address: "Razorpay Corporate Office",
+    },
+    theme: {
+      color: "#bda300",
+    },
+  };
+  var rzp1 = new Razorpay(options);
+  rzp1.on("payment.failed", function (response) {
+    alert(response.error.code);
+    alert(response.error.description);
+    alert(response.error.source);
+    alert(response.error.step);
+    alert(response.error.reason);
+    alert(response.error.metadata);
+  });
+  document.getElementById("rzp-button2").onclick = function (e) {
+    rzp1.open();
+    e.preventDefault();
+  };
+</script>
+{% endif %}
+<script type="text/javascript">
+  console.log("hello");
+  var form = document.getElementById("form");
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    console.log("submitting");
+    submitForm();
+  });
+  function submitForm() {
+    document.getElementById("rzp-button2").classList.remove("hidden");
+    var costumerData = {
+      cart: null,
+      paymentId: null,
+      name: null,
+      email: null,
+      address: null,
+      city: null,
+      state: null,
+      zipcode: null,
+    };
+    costumerData.cart = cart;
+    costumerData.paymentId = form.a.value;
+    costumerData.name = form.name.value;
+    costumerData.email = form.email.value;
+    costumerData.address = form.address.value;
+    costumerData.city = form.city.value;
+    costumerData.state = form.state.value;
+    costumerData.zipcode = form.state.value;
+    // console.log(costumerData)
+    url = "/store/formdata/";
+    fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "X-CSRFToken": csrftoken,
+      },
+      body: JSON.stringify({
+        form: costumerData,
+      }),
+    })
+      .then((res) => res.json)
+      .then((data) => {
+        // console.log(data)
+        cart = {};
+        document.cookie = "cart=" + JSON.stringify(cart) + ";domain=;path=/";
+      });
+    window.onbeforeunload = function () {
+      return false;
+    };
+  }
+</script>
+{% endblock content %}

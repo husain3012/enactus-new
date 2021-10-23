@@ -1,0 +1,78 @@
+{% extends "main.html" %} {% load static %} {% block content %}
+<a href="{% url 'store:store' %}" class="btn btn-outline-secondary"
+  >&#x2190; go back</a
+>
+{% if items %}
+<a
+  href="{% url 'store:checkout' %}"
+  class="btn btn-success"
+  style="position: relative"
+  >checkout</a
+>
+{% endif %}
+<hr />
+<h3>Total: Rs {{ order.get_cart_total }}</h3>
+<h3>Total items: {{ order.get_cart_item }}</h3>
+<h3>{{ items.quantity }}</h3>
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">Item</th>
+      <th scope="col">Price</th>
+      <th scope="col">Quantity</th>
+      <th scope="col">Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for item in items %}
+    <tr>
+      <th scope="row">
+        <img src="{{item.product.pic.url}}" alt="..." style="height: 80px" />
+      </th>
+      <td >{{ item.product.name }}</td>
+      <td>Rs {{item.product.price}}</td>
+      <td>
+        {{ item.quantity }}
+        <svg
+          data-product="{{item.product.id}}"
+          data-action="add"
+          width="1em"
+          height="1em"
+          viewBox="0 0 16 16"
+          class="bi bi-chevron-up update-cart"
+          fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
+          />
+        </svg>
+        <svg
+          data-product="{{item.product.id}}"
+          data-action="remove"
+          width="1em"
+          height="1em"
+          viewBox="0 0 16 16"
+          class="bi bi-chevron-down update-cart"
+          fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+          />
+        </svg>
+      </td>
+      <td >{{ item.get_total }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+<!-- <h1>{{ items }}</h1>
+  <hr>
+  <h1>{{ order }}</h1>
+  <hr>
+  <h1>{{ cartItems }}</h1> -->
+{% endblock content %}

@@ -1,0 +1,338 @@
+{% extends "store/main.html" %} {% load static %} {% block content %}
+
+<!-- Hero Section Begin -->
+<section class="hero-section">
+  <div class="hero-items owl-carousel">
+    <div class="single-hero-items set-bg" data-setbg="https://res.cloudinary.com/enactusjmi/image/upload/v1623169179/Website/store/images/img/Images/store1_xzwmte.png">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <h1>Crafting Evolution</h1>
+            <h6>Hand crafted with love and care by our community</h6>
+            <p>
+              Intricately carved out of high-quality bamboo, our products
+              showcase exquisite artistry and sustainability. Must haves for
+              anyone who wishes to have that aesthetic corner that radiates
+              positive energy right away!
+            </p>
+            <a href={% url 'store:list' %} class="primary-btn">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="single-hero-items set-bg" data-setbg={% static "images/img/Images/store2.png" %}>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <h1>Living the Organic Way</h1>
+            <h6>
+              Embrace the beauty of nature with our environment friendly
+              products
+            </h6>
+            <p>
+              As the fastest growing plant, bamboo has time and again proven its
+              worth as a durable raw material. Our products celebrate this
+              novelty of bamboo and can embellish any living space with their
+              rustic aesthetic and earthly hues.
+            </p>
+            <a href={% url 'store:list' %} class="primary-btn">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Hero Section End -->
+
+<!-- Banner Section Begin -->
+<div class="banner-section spad">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-4">
+        <br />
+        <div class="single-banner">
+          <img src="https://res.cloudinary.com/enactusjmi/image/upload/v1623169181/Website/store/images/img/mug1_d1wavv.jpg" alt="" />
+          <div class="inner-text">
+            <h4>Mugs</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="single-banner">
+          <img src="https://res.cloudinary.com/enactusjmi/image/upload/v1623169184/Website/store/images/img/lamp4_bkapkh.jpg" alt="" />
+          <div class="inner-text">
+            <h4>Lamps</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <br />
+        <div class="single-banner">
+          <img src= {% static "images/img/planter1.jpg" %} alt="" />
+          <div class="inner-text">
+            <h4>Planters</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Banner Section End -->
+
+<!-- Lights Banner Section Begin -->
+<section class="women-banner spad">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="product-large set-bg" data-setbg={% static "images/img/lamp4.jpeg" %}>
+
+          <h2>Lights</h2>
+          <a href={% url 'store:list' %}>Discover More</a>
+        </div>
+      </div>
+      <div class="col-lg-8 offset-lg-1">
+        <div class="filter-control"></div>
+        <div class="product-slider owl-carousel">
+          <div class="product-item">
+            <div class="pi-pic">
+              <img src="https://res.cloudinary.com/enactusjmi/image/upload/v1623169182/Website/store/images/img/lamp12_nyh7it.jpg" alt="" />
+              <div class="sale">Sale</div>
+              <ul>
+                <li class="w-icon active">
+                  <a  data-product="3" data-action="add" href="" class="update-cart"><i class="icon_bag_alt"></i></a>
+                </li>
+                <li class="quick-view"><a href="{% url 'store:detail' pk=3 %}">+ Quick View</a></li>
+              </ul>
+            </div>
+            <div class="pi-text">
+              <div class="catagory-name">Lights</div>
+              <a href={% url 'store:list' %}>
+                <h5>Lamps</h5>
+              </a>
+              <div class="product-price">
+                ₹450
+                <span>₹500</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="pi-pic">
+              <br />
+              <img src="https://res.cloudinary.com/enactusjmi/image/upload/v1623169178/Website/store/images/img/candle2_u0l1ys.jpg" alt="" />
+              <br />
+              <img src="https://res.cloudinary.com/enactusjmi/image/upload/v1623169178/Website/store/images/img/candle3_blyl5d.jpg" alt="" />
+              <ul>
+                <li class="w-icon active">
+                  <a  data-product="5" data-action="add" href="" class="update-cart"><i class="icon_bag_alt"></i></a>
+                </li>
+                <li class="quick-view"><a href="{% url 'store:detail' pk=5 %}">+ Quick View</a></li>
+                
+              </ul>
+            </div>
+            <div class="pi-text">
+              <div class="catagory-name">Lights</div>
+              <a href={% url 'store:list' %}>
+                <h5>Tealight</h5>
+              </a>
+              <div class="product-price">₹50</div>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="pi-pic">
+              <img src="https://res.cloudinary.com/enactusjmi/image/upload/v1623169183/Website/store/images/img/lamp10_s4vsyb.jpg" alt="" />
+              <ul>
+                <li class="w-icon active">
+                  <a  data-product="3" data-action="add" href="" class="update-cart"><i class="icon_bag_alt"></i></a>
+                </li>
+                <li class="quick-view"><a href="{% url 'store:detail' pk=3 %}">+ Quick View</a></li>
+                
+              </ul>
+            </div>
+            <div class="pi-text">
+              <div class="catagory-name">Lights</div>
+              <a href={% url 'store:list' %}>
+                <h5>Lamp</h5>
+              </a>
+              <div class="product-price">₹450</div>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="pi-pic">
+              <br />
+              <img src="https://res.cloudinary.com/enactusjmi/image/upload/v1623169178/Website/store/images/img/candle6_o7k9fq.jpg" alt="" />
+              <br />
+              <img src="https://res.cloudinary.com/enactusjmi/image/upload/v1623169177/Website/store/images/img/candle8_ty15co.jpg" alt="" />
+              <ul>
+                <li class="w-icon active">
+                  <a  data-product="5" data-action="add" href="" class="update-cart"><i class="icon_bag_alt"></i></a>
+                </li>
+                <li class="quick-view"><a href="{% url 'store:detail' pk=5 %}">+ Quick View</a></li>
+                
+              </ul>
+            </div>
+            <div class="pi-text">
+              <div class="catagory-name">Lights</div>
+              <a href={% url 'store:list' %}>
+                <h5>Tealight</h5>
+              </a>
+              <div class="product-price">₹50</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Lights Banner Section End -->
+
+<!-- Diwali Offer Section Begin-->
+<!--<section
+  class="deal-of-week set-bg spad"
+
+>
+  <div class="container">
+    <div class="col-lg-6 text-center">
+      <div class="section-title">
+        <h2 style="color: #e8c309">Diwali Offer</h2>
+        <p>
+          This year, celebrate the magic of Diwali with our specially curated
+          Diwali hampers! Our hamper is the perfect gift this Diwali season and
+          can be even presented as a corporate gift. Gift your loved ones this
+          beautiful hamper along with the beauty of festive feels and enhance
+          the gift exchange tradition of Diwali by adding a sense of class &
+          uniqueness.
+        </p>
+        <div class="product-price">
+          ₹699
+          <span>/ Gift Box</span>
+        </div>
+      </div>
+      <div class="countdown-timer" id="countdown">
+        <div class="cd-item">
+          <span>56</span>
+          <p>Days</p>
+        </div>
+        <div class="cd-item">
+          <span>12</span>
+          <p>Hrs</p>
+        </div>
+        <div class="cd-item">
+          <span>40</span>
+          <p>Mins</p>
+        </div>
+        <div class="cd-item">
+          <span>52</span>
+          <p>Secs</p>
+        </div>
+      </div>
+      <a href={% url 'store:list' %} class="primary-btn">Shop Now</a>
+    </div>
+  </div>
+</section>-->
+<!-- Deal Of The Week Section End -->
+
+<!-- Table Top Banner Section Begin -->
+<section class="man-banner spad">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="filter-control"></div>
+        <div class="product-slider owl-carousel">
+          <div class="product-item">
+            <div class="pi-pic">
+
+              <img src={% static "images/img/planter1.jpg" %} alt="" />
+
+              <div class="sale">Sale</div>
+              <ul>
+                <li class="w-icon active">
+                  <a  data-product="6" data-action="add" href="" class="update-cart"><i class="icon_bag_alt"></i></a>
+                </li>
+                <li class="quick-view"><a href="{% url 'store:detail' pk=6 %}">+ Quick View</a></li>
+                
+              </ul>
+            </div>
+            <div class="pi-text">
+              <div class="catagory-name">Table Top</div>
+              <a href={% url 'store:list' %}>
+                <h5>Planters Bottle</h5>
+              </a>
+              <div class="product-price">
+                ₹300
+                <span>₹400</span>
+              </div>
+            </div>
+          </div>
+          <!--<div class="product-item">
+            <div class="pi-pic">
+              <img src="https://res.cloudinary.com/enactusjmi/image/upload/v1623169184/Website/store/images/img/mug6_h0abr2.jpg" alt="" />
+              <ul>
+                <li class="w-icon active">
+                  <a href="#"><i class="icon_bag_alt"></i></a>
+                </li>
+                <li class="quick-view"><a href="#">+ Quick View</a></li>
+                <li class="w-icon">
+                  <a href="#"><i class="ti-control-shuffle"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="pi-text">
+              <div class="catagory-name">Table Top</div>
+              <a href="#">
+                <h5>Mug</h5>
+              </a>
+              <div class="product-price">₹300</div>
+            </div>
+          </div>-->
+          <div class="product-item">
+            <div class="pi-pic">
+              <img src="https://res.cloudinary.com/enactusjmi/image/upload/v1623169183/Website/store/images/img/penstand1_m7z5ik.jpg" alt="" />
+              <ul>
+                <li class="w-icon active">
+                  <a  data-product="4" data-action="add" href="" class="update-cart"><i class="icon_bag_alt"></i></a>
+                </li>
+                <li class="quick-view"><a href="{% url 'store:detail' pk=4 %}">+ Quick View</a></li>
+                
+              </ul>
+            </div>
+            <div class="pi-text">
+              <div class="catagory-name">Table Top</div>
+              <a href={% url 'store:list' %}>
+                <h5>Pen Stand</h5>
+              </a>
+              <div class="product-price">₹300</div>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="pi-pic">
+              <img src={% static "images/img/planter2.jpg" %} alt="" />
+              <ul>
+                <li class="w-icon active">
+                  <a  data-product="7" data-action="add" href="" class="update-cart"><i class="icon_bag_alt"></i></a>
+                </li>
+                <li class="quick-view"><a href="{% url 'store:detail' pk=7 %}">+ Quick View</a></li>
+                
+              </ul>
+            </div>
+            <div class="pi-text">
+              <div class="catagory-name">Table Top</div>
+              <a href="#">
+                <h5>Planter Test Tube</h5>
+              </a>
+              <div class="product-price">₹300</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 offset-lg-1">
+        <div class="product-large set-bg m-large" data-setbg="https://res.cloudinary.com/enactusjmi/image/upload/v1623169181/Website/store/images/img/mug1_d1wavv.jpg">
+          <h2>Table Top</h2>
+          <a href={% url 'store:list' %}>Discover More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Man Banner Section End -->
+{% endblock content %}

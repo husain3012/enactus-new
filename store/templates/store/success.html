@@ -1,0 +1,6 @@
+{% extends "main.html" %} {% load static %} {% block content %}
+<h1>Payment Success</h1>
+<hr />
+<a href="{% url 'store:store' %}" class="btn btn-success">Continue Shopping</a>
+<a href="{% url 'site:index' %}" class="btn btn-success">Go to our site</a>
+{% endblock content %}

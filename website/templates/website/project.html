@@ -1,0 +1,48 @@
+<!-- make it detail page -->
+{% extends "main.html" %}
+{% load static %}
+{% block title %}
+ENACTUS JMI- Projects
+{% endblock title %}
+{% block css %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Enactus is an international non-profit organization that nurtures managerial skills of students. It channelizes the energy of these future leaders towards constructing innovative business models that improve the quality of life and standard of living of the people in need. Enactus creates and implements community empowerment projects around the globe. The experience not only transforms lives, but also helps students develop the skills that are essential in this challenging, corporate world.
+Enactus is now collaborating with Jamia Millia Islamia University to expand this network across the globe." />
+<meta name="keywords" content="Enactus,Enactus Jmi,Enactus India,JMI,Enactus Jamia Millia Islamia,Vasudha,Aarogyam,Imdaad,Kerala Kan" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Dosis:400,700' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
+
+
+<link rel="stylesheet" href="{% static "css/font-awesome.min.css" %}">
+
+<link rel="stylesheet" href="{% static "css/prettyPhoto.css" %}">
+
+<link rel="stylesheet" href="{% static "css/style.css" %}">
+<style type="text/css">
+.li
+{
+text-align: justify;
+}
+
+html,body
+{
+overflow-x: hidden!important;
+}
+
+</style>
+{% endblock css %}
+{% block content %}
+{% for i in pro %}
+<h1>{{ i }}</h1>
+
+<div class="page-heading text-center" id="tabdeel-page-head" style="background-color: black;">
+  <img src="{{ i.Image.url }}" alt="kaa bhaya">
+  <p>{{ i.Name }}</p>
+  <p id="{{ i.id }}">{{ i.Content|safe }}</p>
+</div>
+{% endfor %}
+<script src="{% static "js/main.js" %}"></script>
+  
+{% endblock content %}

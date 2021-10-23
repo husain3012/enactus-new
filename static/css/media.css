@@ -1,0 +1,34 @@
+.ui.huge.header{
+  text-align: center;
+}
+.ui.text.container{
+  max-width: 100%!important;
+}
+.img img{
+	transition: all ease 500ms!important;
+}
+.img img:hover{
+	transform:scale(1.25)!important;
+	opacity: 0.9!important;
+}
+a.ui.floated.basic.violet.read-more{
+	background: none;
+	border:1px solid;
+	outline: none;
+	font:inherit;
+	margin: 0.5em;
+	padding: 0.5em 1em;
+	color: purple;
+	transition: 0.5s!important;
+}
+a.ui.floated.basic.violet.read-more:hover{
+	border-color: #4caf50;
+	color: white!important;
+	box-shadow: inset 0 0 0 2em purple!important;
+}
+.cntr{
+	text-align: center;
+}
+.ui.items>.item>.content{
+	font-size: 1.3em;
+}

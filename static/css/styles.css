@@ -1,0 +1,51 @@
+.container{
+    text-align:center;
+
+}
+@media screen and (max-width: 576px){
+    .img-fluid{
+        width:200px;
+    }
+
+.x2{
+  padding-top: 60px;
+}
+
+}
+.x4 , .x5{
+  max-height: 150px;
+  max-width: 200px;
+  width: 160px;
+  height: 160px;
+}
+.x1{max-height: 150px;
+max-width: 200px;
+width: 120px;
+height: 120px;
+  padding-top:50px;
+  padding-bottom: 20px;
+}
+.x3{max-height: 150px;
+max-width: 200px;
+width: 120px;
+height: 120px;
+
+}
+.x8{
+  max-height: 150px;
+max-width: 200px;
+width: 120px;
+height: 120px;
+}
+.x7{
+  max-height: 150px;
+max-width: 200px;
+width: 120px;
+height: 120px;
+}
+.x6{
+  max-height: 150px;
+max-width: 200px;
+width: 120px;
+height: 120px;
+}

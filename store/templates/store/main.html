@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+{% load static %} 
+
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Enactus Template">
+    <meta name="keywords" content="Fashi, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ENACTUS JMI- STORE</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v4.7.0/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{% static "css/store/bootstrap.min.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/store/font-awesome.min.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/store/themify-icons.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/store/elegant-icons.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/store/owl.carousel.min.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/store/nice-select.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/store/jquery-ui.min.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/store/slicknav.min.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/store/style.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/store/main.css" %}" type="text/css">
+
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                nav:true,
+                
+            })
+            $( ".owl-prev").html('<i class="ti-arrow-left"></i>');
+            $( ".owl-next").html('<i class="ti-arrow-right"></i>');
+            });
+        var user = '{{ request.user }}'
+        function getToken(name) {
+          let cookieValue = null;
+          if (document.cookie && document.cookie !== '') {
+              const cookies = document.cookie.split(';');
+              for (let i = 0; i < cookies.length; i++) {
+                  const cookie = cookies[i].trim();
+                  // Does this cookie string begin with the name we want?
+                  if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                      cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                      break;
+                  }
+              }
+          }
+          return cookieValue;
+        }
+        const csrftoken = getToken('csrftoken');
+  
+        
+        function getCookie(name){
+            // split coockie string and get all individual name=value pairs in an array
+            var cookieArr = document.cookie.split(";");
+  
+  
+            //loop through array elements
+            for (var i = 0; i < cookieArr.length; i++) {
+              var cookiePair = cookieArr[i].split("=");
+  
+              /*removing whitespaces at the beginning of the cookies name
+              and coompare it with the given string*/
+              if(name==cookiePair[0].trim()){
+                //Decode the cookie value and return
+                return decodeURIComponent(cookiePair[1]);
+              }
+              
+            }
+            //return null if not found
+            return null
+          }
+          var cart = JSON.parse(getCookie('cart'))
+  
+          if (cart==undefined) {
+            cart={}
+            console.log("cart is created")
+            document.cookie='cart='+JSON.stringify(cart)+";domain=;path=/"
+          }
+      </script>
+</head>
+
+<body>
+<script type="text/javascript">
+    // if (window.performance) {
+    //     console.info("window.performance works fine on this browser");
+    // }
+    // console.info(performance.navigation.type);
+    // if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
+        // console.info( "This page is reloaded" );
+        // var preloader = document.getElementById("preloder")
+        // preloader.remove();
+        // console.log(preloader)
+    // } else {
+        // console.info( "This page is not reloaded");
+        // console.log(preloader)
+        
+    // }
+</script>
+
+    <!-- Page Preloder -->
+    <div id="load">
+        <div id="preloder">
+            <div class="loader"></div>
+        </div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header-section">
+        <div class="header-top">
+            <div class="container">
+                <div class="ht-left">
+                    <div class="mail-service">
+                        <i class="ti-email"></i>
+                        teamenactusjmi@gmail.com
+                    </div>
+                    <div class="phone-service">
+                        <i class="ti-phone"></i>
+                        +91 8743905647
+                    </div>
+                </div>
+                <div class="ht-right">
+                   <div class="top-social">
+                        <a href="https://www.facebook.com/EnactusJMI/"><i class="ti-facebook"></i></a>
+                        <a href="https://twitter.com/EnactusJMI"><i class="ti-twitter-alt"></i></a>
+                        <a href="https://www.linkedin.com/in/enactus-jamia-millia-islamia-52a0491a8/"><i class="ti-linkedin"></i></a>
+                        <a href="https://www.instagram.com/enactusjmi/"><i class="ti-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="inner-header">
+                <div class="row">
+                    <div class="col-lg-2 col-md-2">
+                        <div class="logo">
+
+                            <a href={% url 'site:index' %}>
+                                <img src={% static "/images/store/en_b.png" %} alt="">
+
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-7">                    
+                            <div class="input-group">
+                                                
+                             </div>
+                    </div>
+                    <div class="col-lg-3 text-right col-md-3">
+                        <ul class="nav-right">
+                             <br>
+                               <li class="cart-icon">
+                                <a href={% url 'store:cart' %}>
+                                    <i class="icon_bag_alt"></i>
+                                    <span>{{ order.get_cart_item }}</span>
+                                </a>
+                                <div class="cart-hover">
+                                    <div class="select-items">
+                                        <table>
+                                            <tbody>
+                                                {% for item in items %}
+                                                <tr>
+                                                    <td class="si-pic"><img src="{{ item.product.pic.url }}" alt=""></td>
+                                                    <td class="si-text">
+                                                        <div class="product-selected">
+                                                            <p>₹{{item.product.price}} x {{item.quantity}}</p>
+                                                            <h6>{{ item.product.name }}</h6>
+                                                        </div>
+                                                    </td>
+                                                    <td class="si-close">
+                                                        <i class="ti-close"></i>
+                                                    </td>
+                                                </tr>
+                                                {% endfor %}
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="select-total">
+                                        <span>total:</span>
+                                        <h5>{{ order.get_cart_total }}</h5>
+                                    </div>
+                                    <div class="select-button">
+
+                                        <a href={% url 'store:cart' %} class="primary-btn view-card">VIEW CART</a>
+                                        <a href={% url 'store:checkout' %} class="primary-btn checkout-btn" onclick="return checkCart()">CHECK OUT</a>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cart-price">&#x20B9;{{ order.get_cart_total }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-item ">
+            <div class="container">
+                <nav class="nav-menu mobile-menu ">
+                    <ul>
+                        <li><a href={% url 'site:index' %}>Home</a></li>
+                        <li><a href={% url 'site:aboutus' %}>About Us</a></li>
+                        <li><a href={% url 'site:curr' %}>Projects</a></li>
+                        <li><a href={% url 'store:store' %}>Shop</a></li>
+                        <li><a href={% url 'store:cart' %}> Cart</a></li>                                        
+                    </ul> 
+                </nav>
+                <div id="mobile-menu-wrap"></div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    {% block content %}
+      
+    {% endblock content %}
+
+     <!-- Footer Section Begin -->
+     <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer-left">
+                        <div class="footer-logo">
+                            <a href={% url 'site:index' %}><img src={% static "/images/store/logo3.png" %} alt="enactus"></a>
+                        </div>
+                        <ul>
+                            <li>Phone: +91 8743905647</li>
+                            <li>Email: store.enactusjmi@gmail.com</li>
+                        </ul>
+                        <div class="footer-social">
+                            <a href="https://www.facebook.com/EnactusJMI/"><i class="ti-facebook"></i></a>
+                            <a href="https://www.linkedin.com/in/enactus-jamia-millia-islamia-52a0491a8/"><i class="ti-linkedin"></i></a>
+
+                            <a href="https://twitter.com/EnactusJMI"><i class="ti-twitter-alt"></i></a>
+
+                            <a href="https://www.instagram.com/enactusjmi/"><i class="ti-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3"></div>
+                <div class="col-lg-2 offset-lg-1">
+                    <div class="footer-widget">
+                        <h5>Website</h5>
+                        <ul>
+                            <li><a href="{% url 'site:index' %}">Home</a></li>
+                            <li><a href="{% url 'site:aboutus' %}">About Us</a></li>
+                            <li><a href={% url 'site:curr' %}>Our Projects</a></li>
+			    <li><a href={% url 'site:blog_list' %}>Blog</a></li>
+			    <li><a href={% url 'site:featured' %}>Featured</a></li>
+			    <li><a href={% url 'site:gallery' %}>Gallery</a></li>
+
+                            
+                        </ul>
+                    </div>
+                </div>
+               
+                <div class="col-lg-3">
+                    <div class="footer-widget">
+                        <h5>Store</h5>
+                        <ul>
+                            <li><a href="{% url 'store:store' %}">Home</a></li>
+                            <li><a href="{% url 'store:store' %}">Shop</a></li>
+                            <li><a href="{% url 'store:cart' %}">Cart</a></li>
+                            <li><a href="{% url 'store:faq' %}">FAQs</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="{% static "js/store/jquery-3.3.1.min.js" %}"></script>
+    <script src="{% static "js/store/bootstrap.min.js" %}"></script>
+    <script src="{% static "js/store/jquery-ui.min.js" %}"></script>
+    <script src="{% static "js/store/jquery.countdown.min.js" %}"></script>
+    <script src="{% static "js/store/jquery.nice-select.min.js" %}"></script>
+    <script src="{% static "js/store/jquery.zoom.min.js" %}"></script>
+    <script src="{% static "js/store/jquery.dd.min.js" %}"></script>
+    <script src="{% static "js/store/jquery.slicknav.js" %}"></script>
+    <script src="{% static "js/store/owl.carousel.min.js" %}"></script>
+    
+    <script src="{% static "js/store/main.js" %}"></script>
+    <script src="{% static "js/store/content.js" %}"></script>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+{% extends "main.html" %}
+{% load static %}
+{% block title %}
+  ENACTUS JMI|Blog
+{% endblock title %}
+{% block content %} 
+
+    <section class="home-slider owl-carousel">
+      <div class="slider-item bread-item" style="background-image: url({% static "media/website/images/mensuration1.jpg" %});" data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
+        <div class="container-fluid">
+          <div class="row slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+
+            <div class="col-md-8 mt-5 text-center col-sm-12 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+              <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-2"><a href={% url 'site:index' %}>Home</a></span> <span class="mr-2"><a href={% url 'site:blog_list' %}>Blog</a></span> <span>MENSURATION</span></p>
+	            <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">7 Myths About Menstruation That We Need To Bust Straight Away</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row" >
+          <div class="col-md-8 ftco-animate">
+            <!-- <h2 class="mb-3">#1. We Love WordPress Themes</h2> -->
+            <p>Since ages, periods have been considered a taboo. Despite it being a recurring natural physiological process, girls are not even introduced to the term lest they be told about it in detail. Even after the onset of menstruation, it is either the friend circles or social media which throws light on the basic information. These can be unreliable sources that lead to myths and deception. Hence, ignorance, awkwardness, loss of dignity, and missed opportunities, is what the initial years of puberty ensue. At times, young girls are smirched and abused due to the confusion appearing from all sides.</p>
+            <p>A study published by A.C. Nielson and UNICEF in 2016 found that 70% of girls in India feel completely unprepared for their first menstrual experience because of the stigma around discussing menstruation. Consequently, the women of our country severely lack in the field of menstrual hygiene. Only 36% of women in India use sanitary pads, the rest opt for life-threatening materials. Cultural norms, parental influence, personal preferences, economic status and socio-economic pressures influence menstrual hygiene practices to a great extent.</p>
+            
+            <p>Despite living in the 21st century, the incomprehensive attitude towards menstruation is highly prevalent - something which needs to be altered. Menstrual awareness is the need of the hour and it’s high time for the civilization to come to terms with this solely natural process. Open discussions and teachings about the same are essential and there is a need to talk.</p>
+            
+            <p>While the menstrual cycle may seem simple, periods offer a lot to one’s body. Premenstrual Symptoms (PMS) are not only confined to food cravings and mood swings, but also cramps (ranging from mild to painful), bloating, acne breakouts, constipation as well as diarrhoea—all of which occur in and affect the majority. According to a research conducted by Professor Guillebaud of UCL Institute for Women’s Health in 2017, the menstrual cramps or Dysmenorrhea can get as painful as a heart attack. Already bearing such symptoms, adolescent girls are exposed to further risks owing to the lack of awareness regarding menstrual hygiene. 
+
+              <p> Menstrual awareness includes educating all young minds to know, talk, discuss and break the revolving stigma. It also encompasses all the related issues such as period poverty and menstrual waste disposal. 68.8% of the Indian population lives on less than $2 dollars per day. The cost of menstrual products which an average Indian woman needs per month is 300 rupees ($4.20). Hence the products are unattainable for low income households. The non-economical disposable sanitary napkins commonly promoted in our country, are not only hazardous to the body but also to the environment.</p>
+            </p>
+            <p>We at Enactus JMI, through Project Shrimati, are dedicated to our venture to destigmatize menstruation whilst advocating menstrual health and hygiene. Under this project, eco-friendly and economically viable sanitary napkins are to be manufactured by our community - comprising women who have survived domestic abuse. </p>
+            <p>Menstrual awareness concerns all individuals; no longer shall one hustle alone for a humanitarian cause. The road to change has been paved and it's time to tread along the path whilst inculcating zeal in others to do the same.</p>
+            <div class="tag-widget post-tag-container mb-5 mt-5">
+              <div class="tagcloud">
+                <a href="#" class="tag-cloud-link">Menstrual Awareness</a>
+                <a href="#" class="tag-cloud-link">Talk</a>
+                <a href="#" class="tag-cloud-link">Know</a>
+                <a href="#" class="tag-cloud-link">Learn</a>
+              </div>
+            </div>
+            
+            <div class="about-author d-flex p-5 bg-light">
+              <div class="bio align-self-md-center mr-5">
+                <!-- <img src="images/person_1.jpg" alt="Image placeholder" class="img-fluid mb-4"> -->
+              </div>
+              <div class="desc align-self-md-center">
+                <h3>Zaina Shahid Khan</h3>
+                <p></p>
+              </div>
+            </div>
+
+
+            
+
+          </div> <!-- .col-md-8 -->
+          <div class="col-md-4 sidebar ftco-animate">
+           
+            
+            <div class="sidebar-box ftco-animate">
+              <h3>Recent Blog</h3>
+              <!-- <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="icon-calendar"></span> July 12, 2018</a></div>
+                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+                  </div>
+                </div>
+              </div> -->
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url({% static "media/website/images/myth1.jpg" %});"></a>
+                <div class="text">
+                  <h3 class="heading"><a href={% url 'site:myth' %}>7 Myths About Menstruation That We Need To Bust Straight Away</a></h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="icon-calendar"></span>Oct 15, 2021</a></div>
+                    <div><a href="#"><span class="icon-person"></span>Anam Khan</a></div>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url({% static "media/website/images/climate1.jpg" %});"></a>
+                <div class="text">
+                  <h3 class="heading"><a href={% url 'site:climate' %}>Ten Women Shaping Climate Action In 2021</a></h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="icon-calendar"></span>Oct 15, 2021</a></div>
+                    <div><a href="#"><span class="icon-person"></span>Sultana Parween</a></div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+                        
+          </div>
+
+        </div>
+      </div>
+    </section> <!-- .section -->
+
+
+    {% endblock content %}

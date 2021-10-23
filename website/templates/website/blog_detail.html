@@ -1,0 +1,12 @@
+{% extends "main.html" %}
+{% load static %}
+{% block title %}
+  ENACTUD JMI- BLOG
+{% endblock title %}
+{% block content %}
+<!-- body starts here -->
+    <h1>{{ object.title }}</h1>
+    <p>{{ object.content }}</p>
+    <img src="{% static blog.image1.url %}" alt="">
+    <img src="{% static blog.image2.url %}" alt="">
+{% endblock content %}

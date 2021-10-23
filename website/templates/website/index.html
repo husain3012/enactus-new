@@ -1,0 +1,913 @@
+{% extends "main.html" %} {% load static %} {% block title %} ENACTUS JMI| HOME {% endblock title %} 
+{% block css %}
+{% endblock css %}
+{% block content %}
+<section class="home-slider owl-carousel"  >
+    <div class="slider-item" style="background-image: url(https://res.cloudinary.com/enactusjmi/image/upload/v1623169301/Website/site/media/website/images/bg1_hqgs6j.jpg);" >
+      
+      <div class="container-fluid">
+        <div class="row slider-text align-items-center" data-scrollax-parent="true">
+
+          <div class="col-md-5 wrap col-sm-12 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+            <h1 class="mb-4 ml-md-5" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Socially Diligent</h1>
+            <p class="mb-4 ml-md-5 sub-p" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Carrying a legacy of social entrepreneurship, collaborating with the underprivileged and leading them towards self-sufficiency. </p>
+            <!-- <p><a href="#" class="btn btn-primary p-3 px-xl-5 py-xl-3">Get started</a> <a href="#" class="btn btn-primary btn-primary-2 p-3 px-xl-5 py-xl-3">Read more</a></p> -->
+          </div>
+          
+
+        </div>
+      </div>
+    </div>
+<!--  
+    <div class="slider-item" style="background-image: url(images/final1.jpg);">
+      <div class="overlay"></div>
+      <div class="container-fluid">
+        <div class="row slider-text align-items-center" data-scrollax-parent="true">
+
+          <div class="col-md-5 wrap col-sm-12 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+            <h1 class="mb-4 mt-5" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Socially Diligent</h1>
+            <p class="mb-4 mb-md-5">We have been carrying forward the legacy of social entrepreneurship that Enactus has advocated to bring about positive social change in the lives of people. Our aim is to make people self-sustainable and help them improve their lives focusing on their inherent talents and skills, by providing them with a platform to showcase their work keeping in mind the industrial standards.</p>
+            <p><a href="#" class="btn btn-primary p-3 px-xl-5 py-xl-3">Get started</a> <a href="#" class="btn btn-primary btn-primary-2 p-3 px-xl-5 py-xl-3">Read more</a></p>
+          </div>
+          <div class="col-md-7 ftco-animate">
+              <img src="images/bg_3.jpg" class="imgg-fluid" alt="">
+          </div>
+
+        </div>
+      </div>
+    </div>-->
+  </section>
+  
+  <section class="ftco-domain ftco-counter img" id="section-counter" style="background-image: url(https://res.cloudinary.com/enactusjmi/image/upload/v1623169293/Website/site/media/website/images/about1_bumwq5.jpg);" data-stellar-background-ratio="0.5">
+      <div class="container">
+           <header class="special">
+                          <h2>About Us</h2>
+                          <h3>"A story of perseverance"</h3>
+                          <div class="content" >
+                              <p>
+                                  Every success story begins with a dream, a vision, the intention to transform reality into something else, something better. Our dreams have the power to shape our future if only we have the courage to pursue them, and at Enactus we strive to fulfill the dreams of those whom our reality does not favour.
+                              </p>
+                              <a href={% url 'site:aboutus' %} class="btn btn-secondary p-3 px-xl-5 py-xl-3">More</a> 
+                          </div>
+                      </header>
+               </div>
+  </section>
+  <section id="projects" style="background-color: #f9faf4;" id="projectdiv" >
+    <h1 id="projectheader">OUR PROJECTS</h1>
+    <div class="swiper-container"  >
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide" >
+              <a href="current_projects.html" id ="anchortag">
+              <div class= "imgbox">
+                <img src="https://res.cloudinary.com/enactusjmi/image/upload/v1626778716/Website/site/media/website/images/shrimati-colour_xwlfd0.png">
+              </div>
+              <div class="details">
+                <h3>Shrimati <br/><span>Current</span></h3></a>
+                <p>Delivering Change</p>
+              </div>
+              </div>
+      <div class="swiper-slide">
+        <a href={% url 'site:curr' %} id ="anchortag">
+        <div class= "imgbox">
+        <img src="https://i.postimg.cc/NM1wPK0v/irtiqa-color.png" style="padding:30px;padding-left:80px;width: 90%;height: 80%;">
+        </div>
+        <div class="details">
+          <h3>IRTIQA<br/><span>Current</span></h3></a>
+          <p>Crafting Evolution</p>
+        </div>
+        </div>
+
+        <div class="swiper-slide" >
+          <a href={% url 'site:curr' %} id ="anchortag">
+          <div class= "imgbox">
+            <img src="https://i.postimg.cc/y6mVLbJ3/imdaad-copy.png">
+           </div>
+          <div class="details">
+          <h3>IMDAAD <br/><span>Current</span></h3></a>
+            <p>Health in Every Sip</p>
+          </div>
+          </div>
+      
+          <div class="swiper-slide" >
+            <a href={% url 'site:prev' %} id ="anchortag">
+            <div class= "imgbox">
+              <img src="https://i.postimg.cc/0Qhqp49D/tabdeel.jpg">
+            </div>
+            <div class="details">
+              <h3>TABDEEL <br/><span>Previous</span></h3></a>
+              <p>Delivering Change</p>
+            </div>
+            </div>
+
+      <div class="swiper-slide" >
+      <a href={% url 'site:prev' %} id ="anchortag">
+      <div class= "imgbox">
+        <img src="https://res.cloudinary.com/enactusjmi/image/upload/v1626778871/Website/site/media/website/images/Chetna_new_pj2p4j.png">
+       </div>
+      <div class="details">
+        <h3>CHETNA<br/><span>Previous</span></h3> </a>
+        <p>A Step Forward</p>
+      </div>
+      </div>
+  
+      <div class="swiper-slide" onclick="myFunction()">
+      <a href={% url 'site:prev' %} id ="anchortag">
+      <div class= "imgbox">
+        <img src="https://res.cloudinary.com/enactusjmi/image/upload/v1626778910/Website/site/media/website/images/Aarogyam_new_w4so6c.png">
+     
+      </div>
+      <div class="details">
+        <h3>AAROGYAM<br/><span>Previous</span></h3> </a>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Clean Hands,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Clean Future</p>
+      </div>
+      </div>
+  
+      <div class="swiper-slide" >
+      <a href={% url 'site:prev' %} id ="anchortag">
+      <div class= "imgbox">
+        <img src="https://res.cloudinary.com/enactusjmi/image/upload/v1626778940/Website/site/media/website/images/Vasudha_new_xd5dj6.png">
+      
+      </div>
+      <div class="details">
+        <h3>VASUDHA<br/><span>Previous</span></h3></a>
+        <p>Conserving today for a better tomorrow</p>
+      </div>
+      </div>
+   </div>
+    
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    </div>		
+  </section>
+<!--Project ENDS HERE-->
+<section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url(https://res.cloudinary.com/enactusjmi/image/upload/v1623169306/Website/site/media/website/images/journey_onk3mx.jpg);" data-stellar-background-ratio="0.5">
+<div class="container">
+  <div class="row justify-content-center mb-5">
+    <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+      <h2 class="mb-4">OUR JOURNEY</h2>
+      <span class="subheading">Our journey has been a culmination of hard work and team effort, here's a glimpse of our perseverance churning out tangible results.</span>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-md-10">
+      <div class="row">
+        <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
+          <div class="block-18 text-center">
+            <div class="text">
+              <strong class="number" data-number="6">0</strong>
+              <span>Projects</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
+          <div class="block-18 text-center">
+            <div class="text">
+              <strong class="number" data-number="100170">0</strong>
+              <span>Working Hours</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
+          <div class="block-18 text-center">
+            <div class="text">
+              <strong class="number" data-number="325">0</strong>
+              <span>Lives Touched</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
+          <div class="block-18 text-center">
+            <div class="text">
+              <strong class="number" data-number="8">0</strong>
+              <span>SDG's Covered</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- gallery section -->
+<!--
+  <section class="event_gallery" id="media">
+                    <div class="gallery_images pb-5" >
+                        <div class="container pt-5" id="gal_ed">
+                            <h2 class="event_head" style="color:#105682; text-align:center;margin-top:5%;padding-top:7%">Event Gallery</h2>
+                            <div class="pt-5">
+                                <div class="gallery">
+                                    <figure class="gallery__item gallery__item--1">
+                                        <img src="https://res.cloudinary.com/enactusjmi/image/upload/v1623182422/Website/site/media/website/gallery/thumbnails/IMG_20180314_143151_265_mmhlrm.jpg" class="gallery__img" alt="Image 1"/>
+                                      </figure>
+                                      <figure class="gallery__item gallery__item--2">
+                                        <img src="https://res.cloudinary.com/enactusjmi/image/upload/v1623182422/Website/site/media/website/gallery/thumbnails/IMG_20170527_165707263_nhudmg.jpg" class="gallery__img" alt="Image 2"/>
+                                      </figure>
+                                      <figure class="gallery__item gallery__item--3">
+                                        <img src="https://res.cloudinary.com/enactusjmi/image/upload/v1623182422/Website/site/media/website/gallery/thumbnails/IMG_1064_yxye8e.jpg" class="gallery__img" alt="Image 3"/>
+                                      </figure>
+                                      <figure class="gallery__item gallery__item--4">
+                                        <img src="https://res.cloudinary.com/enactusjmi/image/upload/v1623182420/Website/site/media/website/gallery/thumbnails/IMG_1024_db7zgd.jpg" class="gallery__img" alt="Image 4"/>
+                                      </figure>
+                                      <figure class="gallery__item gallery__item--5">
+                                        <img src="https://res.cloudinary.com/enactusjmi/image/upload/v1623182421/Website/site/media/website/gallery/thumbnails/DSC_0899_z3xbyt.jpg" class="gallery__img" alt="Image 5"/>
+                                      </figure>
+                                      <figure class="gallery__item gallery__item--6">
+                                        <img src="https://res.cloudinary.com/enactusjmi/image/upload/v1623182417/Website/site/media/website/gallery/thumbnails/DSC_0807_x6rfd2.jpg" class="gallery__img" alt="Image 6"/>
+                                      </figure>
+                                </div>
+                            </div>
+                            <div class="pt-5 d-flex justify-content-center">
+                                <a href={% url 'site:gallery' %} style="text-decoration:none"><button type="button" className="btn pr-4 pl-4" style="background-color:#105682; color:white">See More...</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </section>
+
+                -->
+  <section id="gallery-section" class="ftco-section bg-light">
+    <div class="container justify-content-center mb-5 pb-3">
+      <div class="text-center heading-section ftco-animate">
+        <h2 >Gallery</h2>
+        <p>
+        Moments of Enactus captured thru a lense.</p>
+      </div>
+    </div>    
+        <div class="ftco-animate gallery-carousel owl-carousel ftco-owl">
+     
+              
+             <a class="item img-link" href= {% url 'site:gallery' %}> <div img="https://res.cloudinary.com/enactusjmi/image/upload/v1623182422/Website/site/media/website/gallery/thumbnails/IMG_20180314_143151_265_mmhlrm.jpg" class=" carousel-gallery-img"></div></a>
+             <a class="item img-link" href= {% url 'site:gallery' %}> <div img="https://res.cloudinary.com/enactusjmi/image/upload/v1623182422/Website/site/media/website/gallery/thumbnails/IMG_20170527_165707263_nhudmg.jpg" class=" carousel-gallery-img"></div></a>
+             <a class="item img-link" href= {% url 'site:gallery' %}> <div img="https://res.cloudinary.com/enactusjmi/image/upload/v1623182422/Website/site/media/website/gallery/thumbnails/IMG_1064_yxye8e.jpg" class=" carousel-gallery-img"></div></a>
+             <a class="item img-link" href= {% url 'site:gallery' %}> <div img="https://res.cloudinary.com/enactusjmi/image/upload/v1623182420/Website/site/media/website/gallery/thumbnails/IMG_1024_db7zgd.jpg" class=" carousel-gallery-img"></div></a>
+             <a class="item img-link" href= {% url 'site:gallery' %}> <div img="https://res.cloudinary.com/enactusjmi/image/upload/v1623182421/Website/site/media/website/gallery/thumbnails/DSC_0899_z3xbyt.jpg" class=" carousel-gallery-img"></div></a>
+             <a class="item img-link" href= {% url 'site:gallery' %}> <div img="https://res.cloudinary.com/enactusjmi/image/upload/v1623182417/Website/site/media/website/gallery/thumbnails/DSC_0807_x6rfd2.jpg" class=" carousel-gallery-img"></div></a>
+             <a class="item img-link" href= {% url 'site:gallery' %}> <div img="https://res.cloudinary.com/enactusjmi/image/upload/v1623182413/Website/site/media/website/gallery/thumbnails/DSC_0427_clfhzq.jpg" class=" carousel-gallery-img"></div></a>
+             <a class="item img-link" href= {% url 'site:gallery' %}> <div img="https://res.cloudinary.com/enactusjmi/image/upload/v1623182414/Website/site/media/website/gallery/thumbnails/DSC_0405_qcrcd3.jpg" class=" carousel-gallery-img"></div></a>
+             <a class="item img-link" href= {% url 'site:gallery' %}> <div img="https://res.cloudinary.com/enactusjmi/image/upload/v1623182412/Website/site/media/website/gallery/thumbnails/DSC_0322_nq3ze5.jpg" class=" carousel-gallery-img"></div></a>
+             <a class="item img-link" href= {% url 'site:gallery' %}> <div img="https://res.cloudinary.com/enactusjmi/image/upload/v1623182411/Website/site/media/website/gallery/thumbnails/DSC_0094_sbsfxo.jpg" class=" carousel-gallery-img"></div></a>
+             <a class="item img-link" href= {% url 'site:gallery' %}> <div img="https://res.cloudinary.com/enactusjmi/image/upload/v1623182410/Website/site/media/website/gallery/thumbnails/DSC_0063_ow3g8h.jpg" class=" carousel-gallery-img"></div></a>
+             <a class="item img-link" href= {% url 'site:gallery' %}> <div img="https://res.cloudinary.com/enactusjmi/image/upload/v1623182411/Website/site/media/website/gallery/thumbnails/DSC_0038_ezdcrk.jpg" class=" carousel-gallery-img"></div></a>
+
+            
+              
+     </div>
+
+        
+  </section>
+
+
+  <section class="ftco-section services-section bg-dark" style="background-color: #a59797;">
+    <div class="container" >
+        <div class="row justify-content-center mb-5 pb-3">
+        <div class="col-md-7 text-center heading-section ftco-animate">
+          <h1 class="mb-4" >ACHIEVEMENTS</h1>
+          <p style="color: aliceblue;">We have represented JMI in various competitions, sharing the ideas and experiences we have gathered from working in the field with the business world</p>
+        </div>
+      </div>
+     
+      <div id="timeline">
+        <ul id="dates">
+          <li><a href="#2021">2021</a></li>
+          <li><a href="#2020">2020</a></li>
+          <li><a href="#2019">2019</a></li>
+          <li><a href="#2018">2018</a></li>
+          <li><a href="#2017">2017</a></li>
+          <li><a href="#2016">2016</a></li>
+          <li><a href="#2015">2015</a></li>
+             
+        </ul>
+        <ul id="issues">
+          <li id="2021">
+            <h1>2021</h1>
+            <p>Selected as one of the top 48 global teams in the Enactus Race For Climate Action competition.</p>
+            <p>Selected as one of the top 48 global teams in the Enactus Race To Rethink Plastic competition.</p>
+          </li>
+          <li id="2020">
+    
+            <h1>2020</h1>
+            <p>Won the best collaboration award in the ‘En-Cares - 2020’ competition hosted by Enactus India.</p>
+
+            <p>Project Darya and Project Irtiqa selected in the top 10 projects in 'Kalpavriksha' hosted by IIM Indore.</p>
+
+            <p>Earned 1st runner up prize in the '5th National Social Enterprise Idea Challenge' hosted by Azim Premji University.
+            </p>
+            <p>Project Irtiqa selected as a Top 20 project in the 'Tata Social Enterprise Challenge' regional round.
+            </p>
+             <p>1st position in the 'Confluence on Entrepreneurship' event organised by TISS Tuljapur
+            </p>
+             
+            </li>
+        
+          <li id="2019">
+    
+            <h1>2019</h1>
+            <p>Recipient of the KPMG Business Ethics Grant-2019 and Mahindra in the Nationals, for a grand sum 50,000 through each.
+            </p>
+          </li>
+          <li id="2018">
+    
+            <h1>2018</h1>
+            <p>Recognized as one of the top 3000 start-ups in 'Smartify', a contest organized by IIM Calcutta and Department of Science and Technology, Government of India.
+            </p>
+            <br>
+            <p>Recipient of cash prize in the ‘BLUEDART COMPETITION’, held during the Enactus Nationals, for a reward of Rs. 40,000.
+            </p>
+            
+            <br>
+            
+          </li>
+          <li id="2017">
+    
+            <h1>2017</h1>
+            <p>First position in the 'Rural Le Carte' competition organized by the Business Cell in JMI.
+            </p>
+          </li>
+          <li id="2016">
+    
+            <h1>2016</h1>
+            
+          <p> First position in 'ENACTUS ROOKIE LEAGUE NATIONAL COMPETITION' which involved 20 renowned teams from across the country.
+          </p>
+          </li>
+          <li id="2015">
+    
+            <h1>2015</h1>
+            <p>First position in ‘INNOVATE FOR A CAUSE’ competition in 2015 organized by Centre for Innovation and Entrepreneurship.</p>
+            
+           <br>
+           <p>Secured one of the top 24 positions in Enactus national competition, for 4 consecutive years among 150+ teams.</p>
+          
+          </li><br>
+         
+        </ul>
+        <div id="grad_left"></div>
+        <div id="grad_right"></div>
+        <a href="#" id="next">+</a>
+        <a href="#" id="prev">-</a>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <section class="ftco-section bg-light" >
+      <div class="container" >
+          <div class="row justify-content-center mb-5 pb-3">
+        <div class="col-md-7 text-center heading-section ftco-animate">
+          <span class="subheading">Products</span>
+          <h1 class="mb-4 text-dark" >OUR BEST SELLERS</h1>
+        </div>
+      </div>
+          <div class="row d-flex">
+                 
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 ftco-animate">
+              <!-- Card-->
+              <div class="card rounded shadow-sm border-0">
+                  <div class="card-body p-4" ><img src="https://res.cloudinary.com/enactusjmi/image/upload/v1623169303/Website/site/media/website/images/img1_cbdi8y.png" alt="" class="imgg-fluid d-block mx-auto mb-3 card-img-top">
+                      <h5 class="shopnow" style="text-align:center;"> <a href="#" style="font-size: medium; color: #fcf9f9;">Diwali Gift Hamper
+                      </a></h5>
+                     
+                      <h3 style="text-align:center; padding-bottom: 5px; color: #a59797;">₹ 699</h3>
+                      
+                      <div style="text-align:center;"><div class="button_cont" align="center" ><a class="example_e" href=" https://www.instagram.com/enactusjmi/" target="__blank" rel="nofollow noopener">Buy Now</a></div></div>
+                    
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 ftco-animate">
+            <!-- Card-->
+            <div class="card rounded shadow-sm border-0">
+                <div class="card-body p-4" ><img src="https://res.cloudinary.com/enactusjmi/image/upload/v1623169315/Website/site/media/website/images/img4_i4ozqj.jpg" alt="" class="imgg-fluid d-block mx-auto mb-3 card-img-top">
+                    <h5 class="shopnow"style="text-align:center"> <a href="#"  style="text-align:center; color: #eeeeee;">Tealights
+                    </a></h5>
+           <!--          <p class="small text-muted font-italic" style="text-align:center">Company Name</p>-->
+                    <h3 style="text-align:center; padding-bottom: 5px; color: #a59797;">₹50</h3>  
+                    <div style="text-align:center"><div class="button_cont" align="center"><a class="example_e" href=" https://www.instagram.com/enactusjmi/" target="__blank" rel="nofollow noopener">Buy Now</a></div></div>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 ftco-animate">
+               <div class="card rounded shadow-sm border-0">
+                <div class="card-body p-4"><img src={% static "media/website/images/img3.jpg" %} alt="" class="imgg-fluid d-block mx-auto mb-3 card-img-top" >
+                    <h5 class="shopnow" style="text-align:center"> <a href="#"  style="text-align:center; color: #eeeeee;">Lamps
+                    </a></h5>
+                        <!--          <p class="small text-muted font-italic" style="text-align:center">Company Name</p>-->
+                    <h3 style="text-align:center; padding-bottom: 5px; color: #a59797;">₹499</h3> 
+                    <div style="text-align:center"><div class="button_cont" align="center"><a class="example_e" href=" https://www.instagram.com/enactusjmi/" target="__blank" rel="nofollow noopener">Buy Now</a></div></div>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 ftco-animate">
+            <!-- Card-->
+            <div class="card rounded shadow-sm border-0">
+                <div class="card-body p-4" ><img src="https://res.cloudinary.com/enactusjmi/image/upload/v1623169309/Website/site/media/website/images/img2_o2vrql.jpg" alt="" class="imgg-fluid d-block mx-auto mb-3 card-img-top">
+                    <h5 class="shopnow" style="text-align:center"> <a href="#"  style="text-align:center; color: #eeeeee;">Mugs
+                    </a></h5>
+                          <!--          <p class="small text-muted font-italic" style="text-align:center">Company Name</p>-->
+                    <h3 style="text-align:center; padding-bottom: 5px; color: #a59797;">₹250</h3> 
+                    <div style="text-align:center"><a href=""><div class="button_cont" align="center"><a class="example_e" href="add-website-here" target="_blank" rel="nofollow noopener">Buy Now</a></div></div></a>
+                  
+                </div>
+            </div>
+        </div>
+        </div>
+      </div>
+  </section>
+      
+
+  <section class="ftco-section testimony-section">
+    <div class="container">
+      <div class="row justify-content-center mb-5 pb-3">
+        <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+          
+          <h2 class="mb-4">Our Team</h2>
+          <p>Our team consists of a group of highly motivated individuals, sensitive to our cause of social entrepreneurship.</p>
+        </div>
+      </div>
+      <div class="row ftco-animate">
+        <div class="col-md-12">
+          <div class="carousel-testimony owl-carousel ftco-owl">
+            
+            <div class="item">
+              <div class="testimony-wrap p-4 pb-5">
+                <div class="user-img mb-5" style="background-image: url(https://res.cloudinary.com/enactusjmi/image/upload/v1623169304/Website/site/media/website/images/IMG_2_qrxrg1.jpg)">
+                  <span class="quote d-flex align-items-center justify-content-center">
+                    <i class="icon-quote-left"></i>
+                  </span>
+                </div>
+                <div class="text">
+                  <p class="mb-5">"There is beauty in the courage of the fragile fighter, those who persevere despite all they've been through. "
+                    It is this belief that's been a constant throughout my journey in Enactus. Everyday here brings a new challenge, and along with it new opportunities to help the underprivileged communities of our society.</p>
+                  <p class="name">Madhur Kushwa</p>
+                  <span class="position">Vice President</span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimony-wrap p-4 pb-5">
+                <div class="user-img mb-5" style="background-image: url('https://res.cloudinary.com/enactusjmi/image/upload/v1623169317/Website/site/media/website/images/Waqas_cqffbx.jpg')">
+                  <span class="quote d-flex align-items-center justify-content-center">
+                    <i class="icon-quote-left"></i>
+                  </span>
+                </div>
+                <div class="text">
+                  <p class="mb-5">Enactus, for me, has served as a platform through which I have been able to harness new skills, gain new experiences and contribute towards the betterment of the society. As a Joint-Secretary, my aim is to ensure optimal functionality of the organisation by creating a strong bond between the team members in our pursuit of social change. 
+                  </p>
+                  <p class="name">Waqas Ali Imam</p>
+                  <span class="position">Joint Secretary</span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimony-wrap p-4 pb-5">
+                <div class="user-img mb-5" style="background-image: url(https://res.cloudinary.com/enactusjmi/image/upload/v1623169311/Website/site/media/website/images/Nawsheen_fwoeyz.jpg)">
+                  <span class="quote d-flex align-items-center justify-content-center">
+                    <i class="icon-quote-left"></i>
+                  </span>
+                </div>
+                <div class="text">
+                  <p class="mb-5">Enactus is a platform where ideas crystallize into vision, imparting knowledge and compassion to the leaders of tomorrow. Enactus JMI endeavours to put a conscious collective effort that has the power to transform lives. As a Joint-Secretary, I believe in being a catalyst - propelling my team to success by providing the right resources and support.
+                  </p>
+                  <p class="name">Nawsheen Kamal</p>
+                  <span class="position">Joint Secretary</span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimony-wrap p-4 pb-5">
+                <div class="user-img mb-5" style="background-image: url(https://res.cloudinary.com/enactusjmi/image/upload/v1623169313/Website/site/media/website/images/muskan_vwkuwg.jpg)">
+                  <span class="quote d-flex align-items-center justify-content-center">
+                    <i class="icon-quote-left"></i>
+                  </span>
+                </div>
+                <div class="text">
+                  <p class="mb-5">
+                    Being a part of Enactus has helped me grow as a better human and has encouraged me to prevail over my weaknesses. For me Enactus has always been an inspiration and creative space. It has brought happiness to everyone's life connected to it and plans to do so, forever. No matter what I do in life, Enactus is going to stay with me.
+                    </p>
+                  <p class="name">Muskan</p>
+                  <span class="position">HR</span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimony-wrap p-4 pb-5">
+                <div class="user-img mb-5" style="background-image: url(https://res.cloudinary.com/enactusjmi/image/upload/v1623169293/Website/site/media/website/images/Barira_lrrwro.jpg)">
+                  <span class="quote d-flex align-items-center justify-content-center">
+                    <i class="icon-quote-left"></i>
+                  </span>
+                </div>
+                <div class="text">
+                  <p class="mb-5">From a naive beginner to a more refined, responsible person, Enactus has witnessed and shaped me throughout. The motive is to serve and evolve. The collective growth of self, the team and our communities fuels us to push further, here at Enactus. The learning experience and the sense of comfort I have received only makes it the safest place to transform.</p>
+                  <p class="name">Barira Ali</p>
+                  <span class="position">HR</span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimony-wrap p-4 pb-5">
+                <div class="user-img mb-5" style="background-image: url(https://res.cloudinary.com/enactusjmi/image/upload/v1623169304/Website/site/media/website/images/jahan_yqx5kl.jpg)">
+                  <span class="quote d-flex align-items-center justify-content-center">
+                    <i class="icon-quote-left"></i>
+                  </span>
+                </div>
+                <div class="text">
+                  <p class="mb-5">
+                 Enactus has given me an opportunity to understand my people and their problems from close on. Being the head of the Community Development team, I have gotten the chance to interact with the communities and realized that as a conscious citizen it is my responsibility to equip the underprivileged section of our society with the right knowledge and skills.
+                    </p>
+                  <p class="name">Jahan Ara</p>
+                  <span class="position">Head, Community Development</span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimony-wrap p-4 pb-4">
+                <div class="user-img mb-5" style="background-image: url(https://res.cloudinary.com/enactusjmi/image/upload/v1623169315/Website/site/media/website/images/saniya_evmv0i.jpg)">
+                  <span class="quote d-flex align-items-center justify-content-center">
+                    <i class="icon-quote-left"></i>
+                  </span>
+                </div>
+                <div class="text">
+                  <p class="mb-5">
+
+
+                    “If something is important enough, even if the odds are stacked against you, you should still do it.” – Elon Musk
+                    
+                    Working on Irtiqa has constantly kept me on my toes. It is a tremendous hands on experience that motivates me to go one step further every single day. As the project head, I envision to make Irtiqa a household name.
+                    </p>
+                  <p class="name">Saniya Roomi</p>
+                  <span class="position">Project Head, Irtiqa </span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimony-wrap p-4 pb-5">
+                <div class="user-img mb-5" style="background-image: url(https://res.cloudinary.com/enactusjmi/image/upload/v1623169291/Website/site/media/website/images/ariba_rihb5l.jpg)">
+                  <span class="quote d-flex align-items-center justify-content-center">
+                    <i class="icon-quote-left"></i>
+                  </span>
+                </div>
+                <div class="text">
+                  <p class="mb-5">
+                    
+                    
+                    Initially one joins an organisation for various different reasons. No matter whatsoever your reason to join enactus be  , you will see it transforming into something so pure and bigger than yourself  . For me Enactus is a place where ideas lobbied with emotions and compassion makes a great party. When it comes to pinning down what enactus has given to me -a better vision for myself and for the world.
+                    </p>
+                  <p class="name">Areeba Tarique</p>
+                  <span class="position">Head, Research and Development</span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimony-wrap p-4 pb-5">
+                <div class="user-img mb-5" style="background-image: url(https://res.cloudinary.com/enactusjmi/image/upload/v1623169308/Website/site/media/website/images/Marufa_rzklkn.jpg)">
+                  <span class="quote d-flex align-items-center justify-content-center">
+                    <i class="icon-quote-left"></i>
+                  </span>
+                </div>
+                <div class="text">
+                  <p class="mb-5">
+                     
+                    
+                    
+                    At Enactus, Research & Development is crucial for project development. It not only requires me to look for all possible solutions but also to be mindful of every aspect, from planning to execution. Along with my team, I intend to develop innovative ideas into viable working models, which would be implemented for the upliftment of the underprivileged communities of our society and set the building blocks for a sustainable future.
+                    </p>
+                  <p class="name">Marufa Sabir</p>
+                  <span class="position">Head, Research & Development</span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimony-wrap p-4 pb-5">
+                <div class="user-img mb-5" style="background-image: url(https://res.cloudinary.com/enactusjmi/image/upload/v1623169318/Website/site/media/website/images/Zainab_1_rr6ozw.jpg)">
+                  <span class="quote d-flex align-items-center justify-content-center">
+                    <i class="icon-quote-left"></i>
+                  </span>
+                </div>
+                <div class="text">
+                  <p class="mb-5">
+                    
+                    
+                    Enactus has helped me to realize my own potential and use my pen as a force of change for collective good. It has helped me to become confident about my skills and ideas. As the content head, my objective is to guide my team while they explore the myriad ways of using language to express their thoughts better and hone their skills. I hope to ensure that my team makes the best of their time here and grasps every opportunity for their own benefit.
+                    </p>
+                  <p class="name">Zainab Wahab</p>
+                  <span class="position">Head, Content</span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimony-wrap p-4 pb-5">
+                <div class="user-img mb-5" style="background-image: url(https://res.cloudinary.com/enactusjmi/image/upload/v1623169314/Website/site/media/website/images/rutba_pu0ygn.jpg)">
+                  <span class="quote d-flex align-items-center justify-content-center">
+                    <i class="icon-quote-left"></i>
+                  </span>
+                </div>
+                <div class="text">
+                  <p class="mb-5">
+                    
+                    
+                     The values of tenacity and determination were not lost on me but Enactus JMI showed me the true essence of these attributes. The quality to trust one's teammates that is built in the workplace has been taught to me through various lessons. It's a journey of learning through my mistakes, where one is not rebuked but criticised constructively. To me Enactus JMI is family, a family that has taught me to be individualistic yet keep my ears open to suggestions that only bring excellence.
+                    </p>
+                  <p class="name">Rutba Iqbal</p>
+                  <span class="position">Head, Content </span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimony-wrap p-4 pb-5">
+                <div class="user-img mb-5" style="background-image: url(https://res.cloudinary.com/enactusjmi/image/upload/v1623169315/Website/site/media/website/images/shariya_h6yycp.jpg)">
+                  <span class="quote d-flex align-items-center justify-content-center">
+                    <i class="icon-quote-left"></i>
+                  </span>
+                </div>
+                <div class="text">
+                  <p class="mb-5">Along with the virtues that Enactus upholds, it has helped me carve my skills in the right direction. As the Social Media and Marketing Head, I have learned to be reliable, and to be confident in believing each individual's potential. Giving my best efforts as I create content, and finding a platform to hone my niche, Enactus has helped me to be an empathetic creator.
+                  </p>
+                  <p class="name">Shariya Tanvir</p>
+                  <span class="position">Head, Social media and marketing</span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimony-wrap p-4 pb-5">
+                <div class="user-img mb-5" style="background-image: url(https://res.cloudinary.com/enactusjmi/image/upload/v1623169317/Website/site/media/website/images/viplove_rnz8pq.jpg)">
+                  <span class="quote d-flex align-items-center justify-content-center">
+                    <i class="icon-quote-left"></i>
+                  </span>
+                </div>
+                <div class="text">
+                  <p class="mb-5">
+                     
+                    
+                    Marketing for Enactus as a head taught me that regardless of any academic or social background, all voices matter equally. Simple things like social media have limitless power to influence the world and change it for the better. It made me realise that in this new age, we as a student community and as a human race can communicate and express ideas that can ripple throughout the world.
+                    </p>
+                  <p class="name">Viplove</p>
+                  <span class="position">Head, Social media and marketing</span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimony-wrap p-4 pb-5">
+                <div class="user-img mb-5" style="background-image: url(https://res.cloudinary.com/enactusjmi/image/upload/v1623169315/Website/site/media/website/images/shubhangi_lomwxo.jpg)">
+                  <span class="quote d-flex align-items-center justify-content-center">
+                    <i class="icon-quote-left"></i>
+                  </span>
+                </div>
+                <div class="text">
+                  <p class="mb-5">
+                                         
+                    As the Head of the Technical department, I always intend to foster teamwork, integrity and inclusion among the team members. I firmly believe that technology is best when it brings people together, and at Enactus, I have had the opportunity to implement this. The department strives to provide digital and technical assistance to the entire team, all the while working towards the common goal of creating a better future for the members of our community and making an impact on our society.
+                    </p>
+                  <p class="name">Shubhangi Singh</p>
+                  <span class="position">Head, Technical</span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimony-wrap p-4 pb-5">
+                <div class="user-img mb-5" style="background-image: url(https://res.cloudinary.com/enactusjmi/image/upload/v1623169313/Website/site/media/website/images/mushabah_qtgyay.jpg)">
+                  <span class="quote d-flex align-items-center justify-content-center">
+                    <i class="icon-quote-left"></i>
+                  </span>
+                </div>
+                <div class="text">
+                  <p class="mb-5">
+
+                    Enactus has opened my eyes to social inequalities, in addition to giving me a safe environment to develop professional skills while making tangible changes. Through innovation and collaboration, Enactus has empowered me to impact lives and has given me the opportunity to learn so much. I strive to guide and work along with my team to make the differences we know we can make. 
+                    
+                    </p>
+                  <p class="name">Mushabah Siddiqui</p>
+                  <span class="position">Head, PR & Sponsorship</span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimony-wrap p-4 pb-5">
+                <div class="user-img mb-5" style="background-image: url(https://res.cloudinary.com/enactusjmi/image/upload/v1623169318/Website/site/media/website/images/Zainab_nbshvi.jpg)">
+                  <span class="quote d-flex align-items-center justify-content-center">
+                    <i class="icon-quote-left"></i>
+                  </span>
+                </div>
+                <div class="text">
+                  <p class="mb-5">It's been 2 years since I have joined Enactus JMI. Enactus JMI is not only a word but an emotion for me. I've got mesmerizing memories and experience by working in Spon and PR team, which helped me not only as a student but also an individual. From my BBA degree,  I learnt typical theoretical terms, but from Enactus I come to know what these terms actually means.</p>
+                  <p class="name">Zainab Khan</p>
+                  <span class="position">Head, PR & Sponsorship</span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimony-wrap p-4 pb-5">
+                <div class="user-img mb-5" style="background-image: url(https://res.cloudinary.com/enactusjmi/image/upload/v1623169310/Website/site/media/website/images/nawaz_xdhrmx.jpg)">
+                  <span class="quote d-flex align-items-center justify-content-center">
+                    <i class="icon-quote-left"></i>
+                  </span>
+                </div>
+                <div class="text">
+                  <p class="mb-5">Enactus is all about creating a positive social impact through innovative and sustainable action. With its boundless curiosity and unmatched determination, I believe that my team endeavours to put a conscious collective effort that has the power to transform lives and build a better, more sustainable, future.</p>
+                  <p class="name">Nawaz Ahmed Khan</p>
+                  <span class="position">President</span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+                <div class="testimony-wrap p-4 pb-5">
+                  <div class="user-img mb-5" style="background-image: url(images/kashish-fatima.png)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text">
+                    <p class="mb-5">
+
+                      Enactus has helped me practice my interests and has given me a platform to polish and learn from the various activities conducted. It has given me an opportunity to work with extremely talented like-minded souls who work towards making this world a better place. My Journey at Enactus started just a few months ago but what makes this short journey incredibly beautiful is the pleasure that I feel by being able to bring even a small change in the quality of the lives of beneficiaries. 
+
+                     </p>
+                    <p class="name">Kashish Fatima</p>
+                  
+                    <span class="position">Head, Graphic Design </span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section bg-light">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+            <h2>FEATURED</h2>
+            <p>"Our success stories have reached the doorsteps of many, helping us spread awareness and highlighting the credibility of our work."<br>
+    
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 ftco-animate">
+            <div class="blog-entry">
+              <a target="_blank" href="https://indiaeducationdiary.in/enactus-jamia-millia-islamia-bags-first-runner-up-position-in-the-fifth-national-social-enterprise-idea-challenge/" class="block-20" style="background-image: url('https://indiaeducationdiary.in/wp-content/uploads/2020/08/Ed_Jaa0WkAcHesl.jpg');">
+              </a>
+              <div class="text d-flex py-4">
+                <div class="meta mb-3">
+                  <div><a href="#">Dec 24, 2020</a></div>
+                  <div><a href="#">India Education Diary</a></div>
+                  <!-- <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div> -->
+                </div>
+                <div class="desc pl-3">
+	                <h3 class="heading"><a target="_blank" href="https://indiaeducationdiary.in/enactus-jamia-millia-islamia-bags-first-runner-up-position-in-the-fifth-national-social-enterprise-idea-challenge/">Enactus Jamia Millia Islamia Bags First Runner Up Position</a></h3>
+	              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ftco-animate">
+            <div class="blog-entry" data-aos-delay="100">
+              <a target="_blank" href="http://bweducation.businessworld.in/article/Azim-Premji-University-Announces-The-Winners-Of-Its-5th-Social-Enterprise-Idea-Challenge/21-12-2020-356134/" class="block-20" style="background-image: url('https://static.businessworld.in/article/article_extra_large_image/1591181751_ijbBTX_Azim_Premji_University.jpg');">
+              </a>
+              <div class="text d-flex py-4">
+                <div class="meta mb-3">
+                  <div><a href="#">Dec 21, 2020</a></div>
+                  <div><a href="#">BW Online Bureau</a></div>
+                  <!-- <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div> -->
+                </div>
+                <div class="desc pl-3">
+	                <h3 class="heading"><a target="_blank" href="http://bweducation.businessworld.in/article/Azim-Premji-University-Announces-The-Winners-Of-Its-5th-Social-Enterprise-Idea-Challenge/21-12-2020-356134/">1st Runner Up: Enactus JMI from Jamia Millia Islamia, New Delhi</a></h3>
+	              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ftco-animate">
+            <div class="blog-entry" data-aos-delay="200">
+              <a target="_blank" href="https://globalprimenews.com/2020/12/20/azim-premji-university-announces-the-winners-of-its-5th-social-enterprise-idea-challenge/" class="block-20" style="background-image: url('https://assets.telegraphindia.com/abped/2021/Jan/1609911708_jmi.jpg');">
+              </a>
+              <div class="text d-flex py-4">
+                <div class="meta mb-3">
+                  <div><a href="#">Dec 20, 2020</a></div>
+                  <div><a href="#">Sachin Murdeshwar</a></div>
+                  <!-- <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div> -->
+                </div>
+                <div class="desc pl-3">
+	                <h3 class="heading"><a target="_blank" href="https://globalprimenews.com/2020/12/20/azim-premji-university-announces-the-winners-of-its-5th-social-enterprise-idea-challenge/">Azim Premji University announces the winners of Social Enterprise Challenge</a></h3>
+	              </div>
+              </div>
+            </div>
+          </div>
+          <a href={% url 'site:featured' %} class="btn btn-outline-secondary m-auto p-3 px-xl-4 ">More</a>
+        </div>
+        
+      </div>
+    </section>
+
+  <section class="ftco-section ftco-partner">
+      <div class="container">
+          <div class="row justify-content-center mb-5 pb-3">
+        <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+          <h2 class="mb-4">OUR SPONSORS & PARTNERS</h2>
+          <p>Throughout our journey we developed an extensive network that consisted of our trustworthy partners and sponsors who became collaborators to our success.</p>
+        </div>
+      </div>
+          <div class="row " style="text-align:center;"> 
+        <div class="col-sm ftco-animate">
+                  <a href="#" class="partner"><img src="https://res.cloudinary.com/enactusjmi/image/upload/v1623169312/Website/site/media/website/images/paras1_a9zkqx.png" class="img-fluid" alt="Colorlib Template"></a><br>
+              </div>
+              
+              <div class="col-sm ftco-animate">
+                  <a href="#" class="partner"><img src="https://res.cloudinary.com/enactusjmi/image/upload/v1623169308/Website/site/media/website/images/mahindra1_hwsmvk.jpg" class="img-fluid" alt="Colorlib Template"></a><br>
+        </div>
+        <div class="col-sm ftco-animate">
+                  <a href="#" class="partner"><img src="https://res.cloudinary.com/enactusjmi/image/upload/v1623169300/Website/site/media/website/images/fujifilm2_u5j5oj.jpg" class="img-fluid" alt="Colorlib Template"></a><br>
+        </div>
+              <div class="col-sm ftco-animate">
+                  <a href="#" class="partner"><img src="https://res.cloudinary.com/enactusjmi/image/upload/v1623169308/Website/site/media/website/images/manya1_xeqmfz.jpg" class="img-fluid" alt="Colorlib Template"></a><br>
+        </div>
+        
+              
+      </div>
+      <br>
+        <div class="row" style="text-align:center;">
+          <div class="col-sm ftco-animate">
+            <a href="#" class="partner"><img src="https://res.cloudinary.com/enactusjmi/image/upload/v1623169315/Website/site/media/website/images/shikhar_udlkyv.png" class="img-fluid " alt="Colorlib Template"></a><br>
+          </div>
+              <div class="col-sm ftco-animate">
+                  <a href="#" class="partner"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAqFBMVEWMAAz///+LAAiKAACHAACDAACXLyqZKyqBAACLAAb17+t/AACaPz3j0dCLAAOiRUTTsK7ClZK1d3TTr6778/GrZGWRDw7t4N+3fnrHnJziyciqYl68gYGRIyH//v+4hICrXVytamWcR0j26unavbuzcnGjU1HWuLbr2tjk0M3MpqSTHR6MFhS6iYqiRD+SLC+YNjSYOTe2eXWkV1OdNC+hTUimXF2bREcUdSWmAAAXsUlEQVR4nO2dCXvqKhOATYAal1q1sS5ttXWvy6na23P//z/7wgCBJJBglp7b83Wec5+rlSS8YRuGYaj9qv/d8qtW77h/s3RuanW39jeL+0P47eW/S+heky3XnNqasIG5oCsenFMQxh5G2CMYWeQNYdIKUreIPmu2hI3n7g7keEcqZkTkPH7zHceZDjcrjDNyh7z1bktT+8P73wQnE9gSondHyLCtuU95Qj63jpTpOLXSNMhqoaT2n5KvPweh48yrK0WXdJ2o+CkvFKG3WOrhIZ63XIQ+qaxz8iZOQowv1MWLRGL/oRNLlIfQ6VdViPiYBHR8U1vES03qNxJNZEvo7p+eno4bfpcJyb4ilxCfP2H5sj/NxJejvp6iZ0G1mx/aY/HlM/r6rUcLl40VvBeoV1OIqM1zOfNQJxgzeCWc6Anxk2AiNPUN/zaOpr5yxEeY3aVbTXeK1rxetuArnrGvtwbCY6RGYV7DdpaEwRtEmoLCvKtDjSIkJnERLwfWleGeNs9hFvn72LL3QXir7NsQNjBpr2ajtVATMBHi8XrUa9HRleQVRAd2jbR4OWxa9FnnKft2IJE8yNRDXqch9asofwtCjHa8kS9PNDmeNKXwpzb9Hvb8Zj7xVwgN9BfzQvSVz9PmEgf9pu4+PEX0ymgT0hGSlSNlF7w/omoZoYxxS/dnKwkIV9mpQnnDNRIf282yzCKMjUlBOy6fsH8dIc1DeYT4NXZBl/xdhC6Gyj1VrrgjQ92Ndl9HGNRSbE84SScUddSfrfu86CbkdNqxP960zxf2x1/tegO15d8DOT+yEfrtua2XG/amNqf23nX3+jQn1psOgzvW2ZOOp/YJ1dBJpDjfc5LPSPITH1qCT51UQnIL6RaYTir5ews+Mp3I9xAesL8hOiIqf6eCESv6R4y04jHCe0Intq4+DR9whwQhwp7UZwOzchvOsqRpwuR4xP7aQlHVO0no8EzSmx7YlztJUkOc8AGGfPl3VgF6/Hk1rfDafp+mEIWEwUf2pAtLzvHoR/6mnD0KkwfVWBDGbmgiZDqLxwacF1vCzgP7sc21oQbCqrR0hIh4xJP/Wvd6QjQf9anQOwttLtDIcxCi0eUyGo0e4EeO+2lLWGv54tH0R4JeVpcnKf1FklDcLyYJQvVJQl3r5iLktcGtuR1E+LvCri2hJxkQuWi74DjhoyVhL0m4IWE7vIZQ/LB/fuaAQe9rSSgKPWBAewNfCYSilm7m6/kyN6Eyf14jK0IUAPJH9zA6+I5J8tVSTthCLiIJ40Uxwqbn2hCi15bX55e0kadVgzIIFTXDROhMTqR+m3whxcpwZ1NLGw+OL3IYjE6vPMu+qKuLZSB+krDWCTrZOU/1iTExjBaCUC/FCKdO3aIvFQ+gMkeYm8xWLY+3x2DahltbDSG1yCOmKjpvxDWNhxUQbuT1O2xBKM2AwVjBLUoz2qfyefsLio34KJwMS12x07AnHIL4VxN2At0L09GCzqk55aJFwp7MROhJQBKo7+wjLDvw2kC5VUK02t4Gsn0ElYybkV6RLaE/Z9P83bWEnVN/FUh/T//Y4MObM3paZhCGHcZ2jqW9BQYRzLSUXowQs7w5H5RQXDDDGYSiXXe5Een6EV+kYxVJ5CJ8cWbC9XLoN7fdNa91LNGZfuHdah/pCQc0TYdrwL1MwtZg3B2vEOaWsOsJ+bSND+GJqmEgnLboGlcgYhmFz5lvWxgRPoTU44S86YEhTcwW+1m1lM5usLLoloPwxNKdmBIP0yc5TJkIE8ZFYawd9gfc/EizHG2Hn/yewVtxeS/rvGcSxgDyzC1Y57T1UAORV3bRttu9NRByJWbcikwikEuE6UtI0JXG+lJhwd9i4t2Hr8FIyKsCFCESynMeQlExhy/4XbTCO+IZ+lJREM52N1ZkgNA8CtilU8YoYdgEprdCwxshI6GoXNvebMRlFnSHOQi5nUaVCTHqNDUyjaemQrWgiL65hDlxbAacUC8ByzQDTtQKWqfzzZ7Wsfv4QSMzEuKxoxHae+CTnFzM2KQ/RigGwfBBdHXTSKhRanISxs2J/jOqmQldrJsksf6RPC6DUvJvj1gUWmyOj05qfVk8w/zdMMcPnpQoxHe1Ul+jteG2Un0mMLQaCWsNrFm15Usp1Eui1ZLOBpxQWt1Fz8muYSNpogxHosif47U6bxnSt88NidPlJ2E9ymuXSpBz9O+Gfto8iKsa5NTrxmSlX17ELOFF/trAh96k2VxMZoi/B3SBND2q0bInrUVyhEfLiSJv9YZIPg4y9sGeHTdzGTRvRPB8MDhL7xluUpKflIui5qY0nxvNr8HkiWoKOBxQ5ZMSyd3YYxq6jMWfabZiCNPdd5f/rtdXWfJD+P3lh/D7y9cSui7t4N3GVb6jRZ/5RYQoGK2Ih9E+QDzswXf0S1xVv4aQKm/ny3hC3UAD9Qr0Pn+7HF/OrS+grJrQDfDWY2mkDvRNdaViO/7AVo7ABXJQKWFQNVfLyAwyRgi6/arSkqySEHvzjYoS1MzNNiBcL7pQY6Us115ljJURupiM5NRxu+ufPS+osNugHd4NW0GvQ879nay9i1mmR3fejFREiPBRlNJi94IJZnajHiVsgzU2UO2DP3/sxKTP7yXnBWVINYTIu3A+f3dW9hTgyW1AeJZOrrQjOgknOn9WRV2tgtAld7x+3g5akU6ENGkZnqJOv8Hg+MjtBIsPUrpXZwWESCxbLc+xvQEuchjhMlYfETmJa0qflJZPSF5YpZu8J8YAtHZoX3pyFgmHG4Sf2eLPdFDyRoCyCRHhy11zzdYa3ONl6Gj6TUTazDi0KXdTTsmEqMFa4FGbS7zkZQg2/uTFhK12MLNiWVIuIZ5DDd0+6/t9bwGEN7CYqL2+wTzpPkocN0ol5LbksaHTpyvDtJbeGPcX1DoeW3Mblbeho0xC7k3zYcod+mB66Q3dV2S6Cb6DajAuDbFEQrbWv9gbaxhdeeCEjrmpIQRNeeeZElwp5REywNuUaQJ1WRCEBqs4FURg/N+VVIqlEbIqOknTSehqmiA0bBJhefI2JVbUsghZJ7NMG63B3yIg7NANWdvU3tLr0rX1WSk9akmEbMl34qXdinY0IaGTXkAeLCk9loFYDiFq0Ay9petbsMS5EITt9FHdm1AHiTK2yJVDCC4zC5w+L4CFRkq4p4RP6eXjgr9Ks4RZcSmEzPknsQM3JrAQ3xSEm4wa2EG+I9b/C0kZhNDAMjUt5thFyxD8n0z+/PKuZ5qsX7gplkDIvDcy+3b04rAybDAPr8wKyLyO4huXr89ecULwed1mqiDMl0ISfmT2IrCvu/CW4+KEbKDYZ+aXeTT4IaFheqFIA7bgDAr2p8UJYQOLYbd1JN0iSmiaXiiCqT+fca+6pRQmBCePYbaa3GAepJKwaaFaw5a87MJOlaKELvjfrbNrEutogLAGn5xDdh+CYPtasV3VRQnBOdGmN6AdzTRC+GrRwMAhKE1Lz5aihFCENzZ5nThNTuhCYVplnNXtQoVYkBBfbBWPYOr0xmspzfX0zbm1uQzUpUItsSAheKqdLIqQYnUVQvrFhhD2+5ltHhZSjBA8NePBRPQpH4OiYJll6lvP7s2wfR8pFoFMKUYIWykerTIaED2qhK+Z0wsmEAzEqkIbpBAhbByxq0JUo6F+zFNB+I9t+BCYRu3za6eFCGEPwdgun03Hf1AJscX0AgTGowJ9TSFCUDWtWhPtXYYPzHrBCKlZykofayCbuZZZihC6nvWzaUezjBDSGFYWqlCNq24PuYfEIoSgiNkpHLSj2UUJ76309RrfXDPKXU2LEMJobFcOtD6PooSzeAALk4ByapdUJ0UIoZezM77TqdP6ECEMKsDC7mJq4GnmbogFCGGsMIRwikmjQ+cSghB88B/21q0LRl2LmYghm/kJYUeQXTMENygvQnggtsoCGy9sZiJaKUL4ZP1gul1jQaAdei4j3FOV1m4shVdpl1QjBQhh7mYzcWIdzSROOIG4MzZ5xHZGD8PVBQjfHLv5AesrurjDCGvQ0+yhJ7a/PPeYX4CQaiVJtxGdgFpyxEyX4WX4DAYeyyoQvMvpHyhD2lXYVTPoaAaMEAtCaF12Jm2YQeX1Qs1PCMNa1uoDEzAG3yBOyHZs1eGr3fQC9pXZFbcmn7kJYZHMUmejGjrmNhdO+I6oiWdrN704WitPSclPCFNTu1kNU0rcOOHWEQESMwSarN3YmZQChJ+Ope7ceHBYyIsoIbSuO5t8wzw075BfgJDaaKyW2sE5n0Y8omSdRkjYs31FECklb9zbAoQftoTQUfQw10c54YnFpLOaM/wpQusyhI7mFXF9NCxDWAK1GlCBMK+97St6GoiJdooRiu82wxxEG8i7ylaAsG45WkBHE5BwfbQjCNl6m9YPMyYwWmSvqOrlC0Z80Gh8j8+anjnhGTEDjM2cARqylcVLl89iWpuNxg/524rd5wEhxGE4853mVnf4M1qbcFPLFOhoaGFzbY0FLvyF2MzWxqAMmvcfmFvA7MmiBGABbiwIA/USyjAgZIumFubsPzV7gvgO2S7ZrKOhfb3oYYCwjbj7l8Uo8MdmwHbmExZmYq4SOoyQfcjujmFc+hNWDHRn9WAWUgN2PYk+NCSkq4/pfphwh6cCA35ha2L2FBg6Gog7JchEO+QuNpkNDLrSP2FNBIvwNNOoCw570E9glZBOKpjHX4YfJuu08y8DF7bqZ01/GuB6Cgo2dKr/IvZ/un0NQcCVS+IO7LCtRiAdGp3jwVZD10qhlRmqrIy9RGSTiJB12J0A2Z1KCFGmui3ieV5LikdgozdyD4f9c/29PrNV8UsnhIa4uN9IWW6WCYHIQE8h4Vwh5JH2FlR8JlNt3CmbUakKwivipIORJUEojyTJEjurZfmE4SEhmQKKi3AQUwhT4rhGpIBbVCFCEe0wWyCDSULtUTg6sTLnVECYnkNoV+wcimWUsOnweotehm+B3Ab/sdBPrOnyVt3tdu/v6TlhXbvF4ioIa3gvw8VjzSkiXJQwghHCGrsqvTfWBX/6OsJguKNDV83qFhrCL5DCHrSGAwC0BwdQsg9BqDldwFCAxd5FYQ/a/eedrfxDyV444ej378HgNZAVhMu/BDK6jMKgjyDH2TGQXjFP7+Je0MmAjakiCK+QvGsyJRGietWEBTeVFPfVVwN5W8jjtYRFN1yUsaNk1jPJMYzIudgF33xOSO2ku6Cd7YQS+na3fjHIo10/XSlhzTiKtQYcYftCZyBwgMeAl+ELpDjy4lzUDQe3oMIBiCqMwNMQx1EOeQhsohJCB+liIo4A7Fd14GB1hEicJPgktucnCWu0AvD3sEvdgJpfKiNED/xoJBR2hUC44u0wHORcMm9CQO1JNWd/VhZjiJ/g0SPCguSilkr4W0bOQFyBz9hlm1MqIkQdBrgOQwZjPJpMFcJF94UIH2GXB9OupBSrIWyw8zX9dyy+P4uAwYIwkKaMDEWP6wv4l2UFUlCkGkJ28JcvdgZjJAMi95Eax/soeiHMNn6VFw4jlEoIWRQeAeiSvmJeuuBIpPKFOM8Yszh1g9LjfVVByDPLlzQRWfKzB7aUbMQJqQ0O/jzjjY8Hzs/aEX61VEDINrcGSgt8Qx0e92t5ggMQRvwgj0FrwMfLDUcksMBh5yV1hVRAyM505S1KjBq3J8KcoAThCiHy6ke6UGacLCcahpTyCdnufL63m8UNgBOMue1wRLAYF8OBkE8fOqzwC+9Pj0r5hGxHM9/bzeLMT+9YAHLaw27G9z2qta0gsiBhUy8ei4YFSLHzd7SW0gnZdJH72TDd2+cmeU89a4t3mjy01Iqnf1O6qJKkdEJQq/nx8ixS6ZRFKHFJ5Ixan0eZwOyEGVY1mcEg94K2VsomhG2z3PDADwP5ZF9I/AyFHj/0oqc0RZho+KUGpS2b0K09DcUGF7a+3VMrYBSR/cKO6+EW4oPzVnJYwdJrqYu9I9scynyCeTCC+MlRII+CygnHQbQvN6ZgRToNP06rp5TNXAMoAkKwsuYxTb9DdE8hMGzwojGsNPZ4e6WfSx4kQqnQigHL22wqL44yShQib7BQhb8fYXu3Fa4kxsMLWdVEbee2V2CJMFUqrKUIE8RXmIyHavPuNNBRKwvpXW3EcldY2RJHo3IRO0qqy8IXnRygP9nLKVt90crXEKKXxxf6D2TNZR7Iufp10i86/cG4alr9o3/OKPn+8kP4/eWH8PuLHaHb6HBpGBODx2sgMkEDoY7dwUeum33/qzMkkmYRInZ63zOXAxzlpxnG3AMXpoG5wWWHm9PzARvSK/enSfbi/iy9OUsuO3j4wNPvEck4Vymd0MXkfFwOI16g0+Zk95i8p1jxdY7gdIh7W6Gp+cPuq2nijsnz0yZ65ozTvN29mvIcvI/B7i2q5frD5fGGGNW/VEKEj0aVOR46HwtT4RHXGiTugTKd6RiR19edYkpl2dZZa8jJ5Aw5HJleYhohXqe58PaiCwwKIdIdTbp9SOQAv5v4qGwSocFdcp+SPlzFsifklkyjRF15FMKDtuD9uPOW3nYjZRgLI+Xi2/QL1lpEMyHsxUmViGuyJESGkvejC2eNjmlKJSTmDUU2Gen1YWLNhCStCjFRze8h4czUdGMLZyTbAzrilJg4iTkp2uh/RsL42WE6Ubd5hIQpJaMunKH37PtHduSRjDpKRbf9xkio6y0SorSUrEZCxVf6R62JOCXHVj6QujAbJkKXKBduN/fhYcb3E6WZKRvKEoS3u+Ns1ltGGqXiSOkplXmo3l+9QtkZp5rr/IlyuvJGaU2+xpfDRKjU+rdD1NXck2tIyjuLEY4xv8hbKb6W0izD9l0yvlN0Y1HrVb4lWU2VOjVqRfcdPctdG5pA/CZC+cpu46fGuOQiflP6jgjh8CBj7GPlF7kDTTbzRVI9+tSUiRcWbeLEBOSFxajZpWgkDD1g5smLPFEsvp5wG9EvOootsS5WsHFYETTR9OQawEG8KL5FytG6MqCw1DUbPo2EolLo9lDLjSRSRVZLKlYqytAexheQHY2mYskKFBrC4WATEM0GoUaIr1n8MBGGO5J0we5wqD3JjdgKYaIaye1NYS1SXpLm/uF+qnCbsewXdPtnsPhRY381Eoqqrds1JgtA2jslYTJ8uSyTMECJ7Dg090ftJy7h/WW7fdK8krDj12zaNRKKtqPbB88W/Kj8qyFMvmTZTsLhIpWwFm4uQZpb6FSzcHNm8qeChHMNYdKVAoWdYwahebuMJLx2U3cFhMn3aEuIZnEJlRpNNfhjhBq9grlJZROqehST0V9PePkuhI+J7P0Q/hD+EH5nQu14mLJhOB9hqLW1KybsJ7W2ZBgN+sr5ZjnNYQSZeqmWMJxa1XMThpq3OuIPfoO8hG9Qat7hgKOLXR5q3lfopaEHjHZuIScGcqJ7JWE4PYnY0/iO51BTD3d8szPKqGjmFtJgoAmBYiTUQIQiDY0aK4YlYQihmWFLQ2NYRySEZgoop1aayaORMOxMeolClO9zoZnj2xGi0KCePKUGhRNaxZgng4QkF2288I3M7K0Ysu9yHkls13wjtEpMcpeh4ss3i99fmWpKejmL3uLoflPszcJ7aeIYmAgVW5gzWZ3rUn4rhs5ebkLFsuTcjtrK/dc9+YtSIxX7qj9eK+nbF8VpTrNgZbQIWxj11Sn+1YRWYU1WktDCqK+Py2W2eR+zb6jaK64lRL8tcqyuPtlE69GNJEZCF193w2sJzf6KUqKLW9mvXHvMnnntKTuAUEQZuJpQjuEmmUaX87NfiVZlTVkhzVz+ilg6rybkGy1SJNYxZq5WbbTb3tJWuUk37X7NqMXpesIMxGliSRedUptiV7+vL9VTgXyYI1WNYwOvHeElkmt8NgcL62o8M5HUQxKyXRs2LqZ7myAP3NHj0lz2SbxRh4qsJv6fUoaxikfqPc26oz95wvrjkzHpLzVxQ7a7tnEjSpbHEMIEvz8+HcNYHk+rOSJY02mlxXRCCfuncn+yf7w8hfefrdYNYuCrMYchNF/NlAw91nGaH7yF15cbDW9UPBZHXKLxk1DmeY6NqzL047n3/eWH8PvLD+H3l/8Pwo77N0vnpvbr5u+WX/8DUYrPLC+Gy1QAAAAASUVORK5CYII=" class="img-fluid" alt="Colorlib Template"></a><br>
+        </div>
+        <div class="col-sm ftco-animate">
+                  <a href="#" class="partner"><img src="data:image/png;base64,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" class="img-fluid" alt="Colorlib Template"></a><br>
+        </div>
+        <div class="col-sm ftco-animate">
+                  <a href="#" class="partner"><img src="https://res.cloudinary.com/enactusjmi/image/upload/v1623169316/Website/site/media/website/images/tjr_knzyha.jpg" class="img-fluid" alt="Colorlib Template"></a><br>
+        </div>
+       
+        
+          </div>
+      </div>
+  </section>
+
+  <section class="ftco-section bg-light">
+    <div class="container">
+      <div class="row justify-content-center mb-5 pb-3">
+        <div class="col-md-7 text-center heading-section ftco-animate">
+          <h2>Recent Blog</h2>
+          <p>"Pen is mightier than the sword"<br>
+            Curated for the creative outlet of our members, this blog aims to give voice to the students and raise awareness towards our cause.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 ftco-animate">
+          <div class="blog-entry">
+            <a href={% url 'site:myth' %} class="block-20" style="background-image: url({% static "media/website/images/myth1.jpg" %});">
+            </a>
+            <div class="text d-flex py-4">
+              <div class="meta mb-3">
+                <div><a href="#">Oct 15, 2021</a></div>
+                <div><a href="#">Anam Khan</a></div>
+                <!-- <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div> -->
+              </div>
+              <div class="desc pl-3">
+                  <h3 class="heading"><a href={% url 'site:myth' %}>7 Myths About Menstruation That We Need To Bust Straight Away</a></h3>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 ftco-animate">
+          <div class="blog-entry" data-aos-delay="100">
+            <a href={% url 'site:climate' %} class="block-20" style="background-image: url({% static "media/website/images/climate1.jpg" %});">
+            </a>
+            <div class="text d-flex py-4">
+              <div class="meta mb-3">
+                <div><a href="#">Oct 15, 2021</a></div>
+                <div><a href="#">Sultana Parween</a></div>
+                <!-- <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div> -->
+              </div>
+              <div class="desc pl-3">
+                  <h3 class="heading"><a href={% url 'site:climate' %}>Ten Women Shaping Climate Action In 2021</a></h3>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 ftco-animate">
+          <div class="blog-entry" data-aos-delay="200">
+            <a href={% url 'site:water' %} class="block-20" style="background-image: url({% static "media/website/images/water1.jpg" %});">
+            </a>
+            <div class="text d-flex py-4">
+              <div class="meta mb-3">
+                <div><a href="#">Oct 15, 2021</a></div>
+                <div><a href="#">Farzan Ghani</a></div>
+                <!-- <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div> -->
+              </div>
+              <div class="desc pl-3">
+                  <h3 class="heading"><a href={% url 'site:water' %}>The necessity and importance of clean water and sanitation</a></h3>
+                </div>
+            </div>
+          </div>
+        </div>
+        <a href={% url 'site:blog_list' %} class="btn btn-outline-secondary m-auto p-3 px-xl-4 ">More</a>
+      </div>
+    </div>
+  </section>
+{% endblock %}

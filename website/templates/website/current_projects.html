@@ -1,0 +1,171 @@
+﻿{% extends "main.html" %}
+{% load static %}
+    {% block title %}
+    Enactus-JMI|CURRENT-PROJECTS
+    {% endblock title %}
+
+        {% block css %}
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Dosis:400,700' rel='stylesheet' type='text/css'>
+      <!-- Bootstrap -->
+      <link rel="stylesheet" href={% static "css/bootstrap.min.css" %}>
+
+
+      <!-- Font awesome
+      <link rel="stylesheet" href="font-awesome.min.css"> -->
+      <link rel="stylesheet" href={% static "css/font-awesome.min.css" %}>
+
+
+      <!-- PrettyPhoto -->
+      <!-- <link rel="stylesheet" href="prettyPhoto.css"> -->
+      <link rel="stylesheet" href={% static "css/prettyPhoto.css" %}>
+
+
+      <!-- Template main Css -->
+      <link rel="stylesheet" href={% static "css/styleProject.css" %}>
+      
+      <!-- Modernizr
+      <script src="assets/js/modernizr-2.6.2.min.js"></script> -->
+
+        {% endblock css %}
+        
+
+{% block content %}
+  
+
+   
+
+
+	<div class="page-heading text-center" id="current-project-page-heading" style="background-image: url(https://res.cloudinary.com/enactusjmi/image/upload/v1623169299/Website/site/media/website/images/currentBG_au1cgt.jpg); height: 400px; padding-top: 150px;">
+
+		<div class="container zoomIn animated">
+			
+            <h1 class="page-title" ><strong>OUR CURRENT PROJECTS</strong> <span class="title-under"></span></h1>
+
+			
+		</div>
+
+	</div>
+
+	<div class="main-container">
+
+		<div class="fadeIn animated"  >
+
+	        <div class="container">
+
+                <!-- s -->
+                <br>
+                
+                <div class="row project-hover animated slideInLeft">
+                    <br>
+                    <br>
+
+
+                        <div class="col-md-3 col-sm-6">
+                            <img src="https://res.cloudinary.com/enactusjmi/image/upload/v1626780433/Website/site/media/website/images/shrimati-colour_twiun3.png" alt="" class="page-img img-responsive" style="max-width:100%; margin-bottom: 10px; " >
+    
+                        </div>
+                        <div class="col-md-9 col-sm-6">
+                            <h3 style="color:#404040;width: auto;margin-top:0px;"class="well well-sm"><strong>Project SHRIMATI</strong></h3>
+                            <p style="text-align: justify;">
+                                Project Shrimati aims to provide a source of stable income to the survivors of domestic abuse and offers them an opportunity at self-dependency and self-sufficiency, alongside working on the grounds of creating eco-friendly reusable face masks and sanitary pads. The project aims to reduce plastic and sanitary waste disposal, hoping to provide an alternative to the non-biodegradable environmental hazard.
+                            </p>
+                            <button class="learn-more pull-right">
+    <span class="circle" aria-hidden="true">
+      <span class="icon arrow"></span>
+    </span>
+    <a href={% url 'site:shrimati' %}><span class="button-text">Know More</span></a>
+  </button>
+                            <!-- <button type="button"class=" btn-primary violet pull-right" ><a  href="shrimati.html" >KNOW MORE..</a></button> -->
+                            </p>
+    					<br>
+    
+                        </div>
+    
+                    </div>
+                <div class="row project-hover animated slideInLeft">
+                    
+
+                        <div class="col-md-3 col-sm-6">
+                            <img src="https://res.cloudinary.com/enactusjmi/image/upload/v1623169304/Website/site/media/website/images/irtiqa_fuj2oz.png" alt="" class="page-img img-responsive" style="max-width:100%; margin-bottom: 10px; " >
+    
+                        </div>
+                        <div class="col-md-9 col-sm-6">
+                            <h3 style="color:#404040;width: auto;margin-top:0px;"class="well well-sm"><strong>Project IRTIQA</strong></h3>
+                            <p style="text-align: justify;">
+                                Project 'Irtiqa' (Urdu for evolution) is a socio-entrepreneurial project of Enactus Jamia Millia Islamia based in the vicinity of Jamia Nagar, Okhla. The project supports the objectives put down by the National Bamboo Mission of India and the United Nations' goals for sustainable development. </p>
+                            <p>With a demand of an estimated 26 million metric tons, the industry is expected to significantly grow further in the near future, transforming it into a buzzing ground for small entrepreneurs. Being the second largest producer of bamboo all over the world, the bamboo industry in India is a booming hot-spot creating an approximate profit of Rs.9,000 crores for the country.
+                            </p>
+    
+                            <button class="learn-more pull-right">
+                          <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                          </span>
+                          <a href={% url 'site:irtiqa' %}><span class="button-text">Know More</span></a>
+                        </button>
+                            </p>
+    
+    
+                        </div>
+    
+                    </div>
+                   
+                <div class="row project-hover animated slideInLeft">
+                    
+                        <div class="col-md-3 col-sm-6">
+                            <img src="https://res.cloudinary.com/enactusjmi/image/upload/v1623169301/Website/site/media/website/images/imdaad_lpyhs6.png" alt="" class="page-img img-responsive" style="max-width:100%; margin-bottom: 10px; " >
+
+                        </div>
+                        <div class="col-md-9 col-sm-6">
+                            <h3 style="color:#404040;width: auto;margin-top:0px;"class="well well-sm"><strong>Project IMDAAD</strong></h3>
+                            <p style="text-align: justify;color:#737373;">
+                            <p>Amongst those employed, 94% of the total women workers in the informal sector have no social security. Recognizing the need for a consistent source of income for these women, we developed "Project Imdaad"; a sustainable business model simulated by a naturally crafted healthy and refreshing drink ‘ZipSip’. Made using Indian Sarsaparilla– a natural body coolant with medicinal properties, ZipSip offers a healthy alternative to the sugary and carbonated drinks available in the market.
+                            </p>
+                            
+
+
+
+                                <button class="learn-more pull-right">
+    <span class="circle" aria-hidden="true">
+      <span class="icon arrow"></span>
+    </span>
+    <a href={% url 'site:imdaad' %}><span class="button-text">Know More</span></a>
+  </button>
+                            </p>
+
+
+                        </div>
+
+                </div>
+                <br><br>
+
+	         </div>
+	        
+	    </div> 
+
+		</div>
+
+
+	
+
+    
+
+
+
+    <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="assets/js/jquery-1.11.1.min.js"><\/script>')</script>
+
+        <!-- Bootsrap javascript file -->
+        <script src={% static "js/bootstrap.min.js" %}></script>
+
+        <!-- PrettyPhoto javascript file -->
+        <!-- <script src="static/js/jquery.prettyPhoto.js"></script> -->
+
+
+
+
+        <!-- Template main javascript -->
+        <script src={% static "js/main.js" %}></script>
+
+        {% endblock content %}

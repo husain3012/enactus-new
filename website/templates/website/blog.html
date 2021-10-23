@@ -1,0 +1,217 @@
+{% extends "main.html" %} {% load static %} {% block title %} ENACTUS JMI|BLOG
+{% endblock title %} {% block content %}
+<section class="home-slider owl-carousel">
+  <div
+    class="slider-item bread-item"
+    style="background-image: url(https://res.cloudinary.com/enactusjmi/image/upload/v1626168237/Website/site/media/website/images/image_1_j3mzzq.jpg)"
+    data-stellar-background-ratio="0.5"
+  >
+    <div class="overlay"></div>
+    <div class="container-fluid">
+      <div
+        class="row slider-text align-items-center justify-content-center"
+        data-scrollax-parent="true"
+      >
+        <div
+          class="col-md-8 mt-5 text-center col-sm-12 ftco-animate"
+          data-scrollax=" properties: { translateY: '70%' }"
+        >
+          <p
+            class="breadcrumbs"
+            data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"
+          >
+            <span class="mr-2"><a href={% url 'site:index' %}>Home</a></span>
+            <span>Blog</span>
+          </p>
+          <h1
+            class="mb-3 bread"
+            data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"
+          >
+            Read Blog
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ftco-section bg-light">
+  <div class="container" id="blog">
+    <div class="row">
+      <div class="col-md-4 ftco-animate">
+        <div class="blog-entry">
+          <a
+            href={% url 'site:myth' %}
+            class="block-20"
+            style="background-image: url({% static "media/website/images/myth1.jpg" %})"
+          >
+          </a>
+          <div class="text d-flex py-4">
+            <div class="meta mb-3">
+              <div><a href="#">Oct 15, 2021</a></div>
+              <div><a href="#">Anam Khan</a></div>
+              <!-- <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div> -->
+            </div>
+            <div class="desc pl-3">
+              <h3 class="heading">
+                <a href={% url 'site:myth' %}>7 Myths About Menstruation That We Need To Bust Straight Away</a>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 ftco-animate">
+        <div class="blog-entry" data-aos-delay="100">
+          <a
+            href={% url 'site:climate' %}
+            class="block-20"
+            style="background-image: url({% static "media/website/images/climate1.jpg" %})"
+          >
+          </a>
+          <div class="text d-flex py-4">
+            <div class="meta mb-3">
+              <div><a href="#">Oct 15, 2021</a></div>
+              <div><a href="#">Sultana Parween</a></div>
+              <!-- <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div> -->
+            </div>
+            <div class="desc pl-3">
+              <h3 class="heading">
+                <a href={% url 'site:climate' %}>Ten Women Shaping Climate Action In 2021</a>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 ftco-animate">
+        <div class="blog-entry" data-aos-delay="200">
+          <a
+            href={% url 'site:water' %}
+            class="block-20"
+            style="background-image: url({% static "media/website/images/water1.jpg" %})"
+          >
+          </a>
+          <div class="text d-flex py-4">
+            <div class="meta mb-3">
+              <div><a href="#">Oct 15, 2021</a></div>
+              <div><a href="#">Farzan Ghani</a></div>
+              <!-- <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div> -->
+            </div>
+            <div class="desc pl-3">
+              <h3 class="heading">
+                <a href={% url 'site:water' %}>The necessity and importance of clean water and sanitation</a>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 ftco-animate">
+        <div class="blog-entry">
+          <a
+            href={% url 'site:bamboo' %}
+            class="block-20"
+            style="background-image: url(https://res.cloudinary.com/enactusjmi/image/upload/v1623169299/Website/site/media/website/images/blogimg7_aciqkg.jpg)"
+          >
+          </a>
+          <div class="text d-flex py-4">
+            <div class="meta mb-3">
+              <div><a href="#">Dec 25, 2020</a></div>
+              <div><a href="#">Nuzhat Khan</a></div>
+              <!-- <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div> -->
+            </div>
+            <div class="desc pl-3">
+              <h3 class="heading">
+                <a href={% url 'site:bamboo' %}>Bamboo: The Material And The Industry</a>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 ftco-animate">
+        <div class="blog-entry" data-aos-delay="100">
+          <a
+            href={% url 'site:sanitation' %}
+            class="block-20"
+            style="background-image: url(https://res.cloudinary.com/enactusjmi/image/upload/v1623169299/Website/site/media/website/images/blogimg1_vfyezo.jpg)"
+          >
+          </a>
+          <div class="text d-flex py-4">
+            <div class="meta mb-3">
+              <div><a href="#">Dec 16, 2020</a></div>
+              <div><a href="#">Mirza Raheem </a></div>
+              <!-- <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div> -->
+            </div>
+            <div class="desc pl-3">
+              <h3 class="heading">
+                <a href={% url 'site:sanitation' %}>Sanitation in the time of COVID-19</a>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 ftco-animate">
+        <div class="blog-entry" data-aos-delay="200">
+          <a
+            href={% url 'site:women' %}
+            class="block-20"
+            style="background-image: url({% static "media/website/images/blog1.jpg" %})"
+          >
+          </a>
+          <div class="text d-flex py-4">
+            <div class="meta mb-3">
+              <div><a href="#">Dec 6, 2020</a></div>
+              <div><a href="#">Sanya Kapoor</a></div>
+              <!-- <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div> -->
+            </div>
+            <div class="desc pl-3">
+              <h3 class="heading">
+                <a href={% url 'site:women' %}
+                  >The Necessity of Financial Independence for Women</a
+                >
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 ftco-animate">
+        <div class="blog-entry">
+          <a
+            href={% url 'site:mensuration' %}
+            class="block-20"
+            style="background-image: url({% static "media/website/images/mensuration1.jpg" %})"
+          >
+          </a>
+          <div class="text d-flex py-4">
+            <div class="meta mb-3">
+              <div><a href="#">Oct 15, 2021</a></div>
+              <div><a href="#">Zaina Shahid Khan</a></div>
+              <!-- <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div> -->
+            </div>
+            <div class="desc pl-3">
+              <h3 class="heading">
+                <a href={% url 'site:mensuration' %}>Menstrual Awareness: Talk, Know, Learn</a>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col text-center">
+        <div class="block-27">
+          <ul>
+            <li><a href="#blog">&lt;</a></li>
+            <li class="active"><span>1</span></li>
+            <li><a href="#blog">2</a></li>
+            <li><a href="#blog">3</a></li>
+            <li><a href="#blog">&gt;</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock content %}

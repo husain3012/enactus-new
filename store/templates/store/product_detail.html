@@ -1,0 +1,83 @@
+{% extends "store/main.html" %} {% load static %} {% block content %}
+<!-- Product Shop Section Begin -->
+    <section class="product-shop spad page-details">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="filter-widget">
+                    
+                    </div>
+                    
+                   
+                </div>
+                <div class="col-lg-9">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="product-pic-zoom">
+                                <img class="product-big-img" src="{{object.pic.url}}" alt="{{object.pic.url}}">
+                                <div class="zoom-icon">
+                                    <i class="ti-search-plus"></i>
+                                </div>
+                            </div>
+                            <div class="product-thumbs">
+                                <div class="product-thumbs-track ps-slider owl-carousel">
+                                    <div class="pt active" data-imgbigurl="{{ object.image1.url }}"><img
+                                            src="{{ object.image1.url }}" alt=""></div>
+                                    <div class="pt" data-imgbigurl="{{ object.image2.url }}"><img
+                                            src="{{ object.image2.url }}" alt=""></div>
+                                    <div class="pt" data-imgbigurl="{{ object.image3.url }}"><img
+                                            src="{{ object.image3.url }}" alt=""></div>
+                                    <div class="pt" data-imgbigurl="{{ object.image3.url }}"><img
+                                            src="{{ object.image3.url }}" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="product-details">
+                                <div class="pd-title">
+                                    <span>{{ object.category }}</span>
+                                    <h3>{{ object.name }}</h3>
+                                </div>
+                                
+                                <div class="pd-desc">
+                                    <p>{{ object.disc }} </p>
+                                    <h4>₹ {{ object.price }}</h4>
+                                </div>
+                               
+                               <div class="quantity">
+                                    
+                                    <a data-product="{{ product.id }}" data-action="add" href="" class="primary-btn pd-cart update-cart">Add To Cart</a>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-tab">
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Product Shop Section End -->
+
+<!-- <div class="jumbotron">
+  <img
+    src="{{ object.pic.url }}"
+    alt="{{ object.name }}"
+    style="height: max-content"
+  />
+  <h2>{{ object.name }}</h2>
+  <hr />
+  <p>{{ object.disc }}</p>
+  <button
+    data-product="{{ object.id }}"
+    data-action="add"
+    class="btn btn-outline-secondary update-cart"
+  >
+    Add to cart
+  </button>
+</div> -->
+{% endblock content %}

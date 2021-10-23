@@ -1,0 +1,32 @@
+{% extends "main.html" %}
+{% load static %}
+{% block title %}
+  Enactus JMI- BLOG
+{% endblock title %}
+{% block css %}
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Enactus is an international non-profit organization that nurtures managerial skills of students. It channelizes the energy of these future leaders towards constructing innovative business models that improve the quality of life and standard of living of the people in need. Enactus creates and implements community empowerment projects around the globe. The experience not only transforms lives, but also helps students develop the skills that are essential in this challenging, corporate world.
+Enactus is now collaborating with Jamia Millia Islamia University to expand this network across the globe." />
+<meta name="keywords" content="Enactus,Enactus Jmi,Enactus India,JMI,Enactus Jamia Millia Islamia,Vasudha,Aarogyam" />
+<!-- PrettyPhoto -->
+<link rel="stylesheet" href="{% static "css/prettyPhoto.css" %}">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css"/>
+{% endblock css %}
+
+{% block content %}
+<!-- body starts here -->
+
+
+  {% for blog in object_list %}
+    <h1>{{ blog.title }}</h1>
+    <!-- this is the main image -->
+    <img src="{% static blog.image1.url %}" alt="" style="width: 25%;">
+    <p>{{ blog.content|truncatewords_html:60 }}</p>
+    
+    <a class="btn btn-primary" href="{% url 'site:blog_detail' pk=blog.id %}">
+      Read More
+    </a>
+  {% endfor %}
+{% endblock content %}
